@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { assets } from "../assets/assets";
 import jobData from "../data/jobData";
-import SimilarJobCard from "../components/SimilarJobCard";
+import SimilarJobCard from "../Components/SimilarJobCard";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Slider from "react-slick";
