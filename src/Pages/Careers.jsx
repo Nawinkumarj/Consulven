@@ -9,7 +9,7 @@ const Careers = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredJobs, setFilteredJobs] = useState(jobData);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [sortOption, setSortOption] = useState("");
+  const [, setSortOption] = useState("");
 
   const handleSort = (option) => {
     setSortOption(option);
