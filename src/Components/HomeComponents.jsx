@@ -30,7 +30,7 @@ const HomeComponents = () => {
             <div className="Homepage-about-img">
               {isMoving && (
                 <CustomCursor
-                  cursorImage={assets.logoWhite}
+                  cursorImage={assets.clickImg}
                   cursorSize={{ width: 80, height: 80 }}
                 />
               )}
