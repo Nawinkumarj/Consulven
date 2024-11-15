@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import Header from "../Components/Header";
 import jobData from "../data/jobData";
-import JobCard from "../components/JobCard";
+import JobCard from "../Components/JobCard";
 import { assets } from "../assets/assets";
 
 const Careers = () => {
@@ -50,7 +50,7 @@ const Careers = () => {
         {/* LeftSide */}
         <div className='leftSide'>
           <h1>JOIN OUR TEAM</h1>
-          <p>our success is built on the collective expertise of our people. We nurture an environments where creativity thrives, leadship is cultivated, and collaboration is key. Whether you're seasoned professional or just starting you carer, you'll find opportinities to challenge yourself, grow your skills, and make a difference.</p>
+          <p>our success is built on the collective expertise of our people. We nurture an environments where creativity thrives, leadship is cultivated, and collaboration is key. Whether you are seasoned professional or just starting you carer, you wll find opportinities to challenge yourself, grow your skills, and make a difference.</p>
           <a href='#jobSearch'> 
             <button>Opening position <img src={assets.arrow_icon} alt="" /> </button>
           </a>
@@ -97,7 +97,7 @@ const Careers = () => {
 
       <div className='carrerContentContainer'>
         <h1>CURRENT OPENING</h1>
-        <p>Explore the roles we're currently hiring for and find the one that matches your skills and ambitions. Each role offers the opportunity to work on impactful projects, engage with a talented team, and grow your career in consulting and compliance</p>
+        <p>Explore the roles we are currently hiring for and find the one that matches your skills and ambitions. Each role offers the opportunity to work on impactful projects, engage with a talented team, and grow your career in consulting and compliance</p>
       </div>
 
       <div className='searchContainer'>

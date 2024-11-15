@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import ServiceSection from '../Components/ServiceSection'
 import Header from '../Components/Header'
 import SectionTitle from "../Components/SectionTitle";
@@ -24,7 +24,7 @@ const ServiceMain = () => {
                    <div className='serviceMain1-vector2'></div>
                    </div>
                    <p>Lorem Ipsum is simply dummy text of the printing and 
-                    typesetting industry. Lorem Ipsum has been the industry's 
+                    typesetting industry. Lorem Ipsum has been the industry
                     standard dummy text ever since the 1500s, when an unknown </p>
                 </div>
                 <div className='serviceMain1-content2'>

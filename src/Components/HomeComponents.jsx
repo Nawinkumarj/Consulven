@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faCircle } from "@fortawesome/free-solid-svg-icons";
-// import { faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
 import { assets } from "../assets/assets";
-// import abouticon from "../assets/logo-c.png";
 import {Link} from "react-router-dom";
 import CustomCursor from "../Components/cursorMain.jsx";
 import EnquiryForm from "./EnquiryForm.jsx";
