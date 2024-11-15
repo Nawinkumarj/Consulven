@@ -26,7 +26,7 @@ const EnquiryForm = () => {
               <div className="Homepage-choose-bottom">
                 {isHovering && (
                   <CustomCursor
-                    cursorImage={assets.logoWhite}
+                    cursorImage={assets.clickImg}
                     cursorSize={{ width: 150, height: 150 }}
                   />
                 )}
