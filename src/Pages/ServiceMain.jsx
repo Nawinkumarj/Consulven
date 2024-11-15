@@ -1,5 +1,5 @@
 import React from 'react'
-import ServiceSection from '../Components/serviceSection'
+import ServiceSection from '../Components/ServiceSection'
 import Header from '../Components/Header'
 import SectionTitle from "../Components/SectionTitle";
 import { assets } from "../assets/assets";
