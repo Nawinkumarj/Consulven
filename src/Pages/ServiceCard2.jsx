@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import { FaChartLine, FaCogs, FaIndustry } from "react-icons/fa";
-import ServiceMainSection from "../components/serviceMainSection";
+import React from "react";
+import ServiceMainSection from "../Components/serviceMainSection";
 import { assets } from "../assets/assets";
 import Header from "../Components/Header";
 import service2Data from "../data/service2Data";
