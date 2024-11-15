@@ -1,5 +1,4 @@
-import React,{useState} from 'react'
-import person from "../assets/why choose us.png"
+import {useState} from 'react'
 import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { useNavigate   } from 'react-router-dom';
 import teamMembers from '../data/teamData';
@@ -43,8 +42,11 @@ const Teams = () => {
                                 onClick={() => handleClick(member.id)} // Pass the id to handleClick
                             >
                                 <div className={`teams-content-card1  ${member.size === 'small' ? 'small-card' : 'large-card'}`}>
-                                {isHovering && <CustomCursor cursorImage={assets.logoWhite}
-                                cursorSize={{ width: 80, height: 80 }}  />}
+                                {isHovering &&
+                                 <CustomCursor 
+                                    cursorImage={assets.logoWhite}
+                                    cursorSize={{ width: 180, height: 180 }}
+                                 />}
                                     <img src={member.image} alt={member.name}   onMouseEnter={handleMouseEnter} 
                                         onMouseLeave={handleMouseLeave} />
                                     
