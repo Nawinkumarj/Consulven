@@ -44,8 +44,8 @@ const Teams = () => {
                                 <div className={`teams-content-card1  ${member.size === 'small' ? 'small-card' : 'large-card'}`}>
                                 {isHovering &&
                                  <CustomCursor 
-                                    cursorImage={assets.logoWhite}
-                                    cursorSize={{ width: 180, height: 180 }}
+                                    cursorImage={assets.abouticon}
+                                    cursorSize={{ width: 80, height: 80 }}
                                  />}
                                     <img src={member.image} alt={member.name}   onMouseEnter={handleMouseEnter} 
                                         onMouseLeave={handleMouseLeave} />
