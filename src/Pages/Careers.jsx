@@ -43,14 +43,14 @@ const Careers = () => {
   return (
     <div>
 
-      <Header title="LOREM IPSUM" para="Excellence at the Intersection of Strategy and Compliance" image={"https://images.pexels.com/photos/15205160/pexels-photo-15205160/free-photo-of-photograph-of-a-black-vintage-camera.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} />
+      <Header title="Join Us" para="At Consulven, We Value Excellence and Integrity" image={"https://images.pexels.com/photos/15205160/pexels-photo-15205160/free-photo-of-photograph-of-a-black-vintage-camera.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} />
 
       <div className='careerContainer'>
         
         {/* LeftSide */}
         <div className='leftSide'>
           <h1>JOIN OUR TEAM</h1>
-          <p>our success is built on the collective expertise of our people. We nurture an environments where creativity thrives, leadship is cultivated, and collaboration is key. Whether you are seasoned professional or just starting you carer, you wll find opportinities to challenge yourself, grow your skills, and make a difference.</p>
+          <p>Our success is built on the collective expertise of our people. We nurture an environment where creativity thrives, leadership is cultivated, and collaboration is key. Whether you’re a seasoned professional or just starting your career, you’ll find opportunities to challenge yourself, grow your skills, and make a difference.</p>
           <a href='#jobSearch'> 
             <button>Opening position <img src={assets.arrow_icon} alt="" /> </button>
           </a>
@@ -97,7 +97,7 @@ const Careers = () => {
 
       <div className='carrerContentContainer'>
         <h1>CURRENT OPENING</h1>
-        <p>Explore the roles we are currently hiring for and find the one that matches your skills and ambitions. Each role offers the opportunity to work on impactful projects, engage with a talented team, and grow your career in consulting and compliance</p>
+        <p>Explore the roles we’re currently hiring for and find the one that matches your skills and ambitions. Each role offers the opportunity to work on impactful projects, engage with a talented team, and grow your career in consulting and compliance.</p>
       </div>
 
       <div className='searchContainer'>

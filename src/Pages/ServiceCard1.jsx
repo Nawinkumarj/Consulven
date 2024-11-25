@@ -25,7 +25,7 @@ const ServiceCard1 = () => {
           <div className="ServiceCard-2">
             <div className="ServiceCard2-head">
               <img src={assets.serviceCircle} alt="" />
-              <h1>GENERAL MANAGEMENT CONSULTING SERVICE</h1>
+              <h1>Management Consulting</h1>
               <p>
                 Our management consulting services focus on driving measurable
                 improvements across your organization’s strategic and
@@ -47,6 +47,7 @@ const ServiceCard1 = () => {
               icon={service.icon}
               heading={service.heading}
               content={service.content}
+              popContent={service.popContent}
               para1={service.para1}
               para2={service.para2}
               para3={service.para3}

@@ -3,7 +3,7 @@ import { FaArrowRight  } from 'react-icons/fa';
 import { assets } from "../assets/assets";
 import { IoIosClose } from "react-icons/io";
 
-const ServiceMainSection = ({ image, icon, heading, content, para1, para2, para3, para4}) => {
+const ServiceMainSection = ({ image, icon, heading, content, popContent, para1, para2, para3, para4}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {
@@ -41,8 +41,8 @@ const ServiceMainSection = ({ image, icon, heading, content, para1, para2, para3
                 <img src={assets.popImg} alt="" />
               </div>
               <div className='modal-head'>
-                <h2>STRATEGIC PLANNING AND ADVIADVISORY</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has</p>
+                <h2>{heading}</h2>
+                <p>{popContent}</p>
               </div>
               
             </div>

@@ -4,8 +4,8 @@ import image from "../assets/why choose us.png"
 const teamMembers = [
     {
       id: 1,
-      name: "Lorem Gipsum",
-      role: "Simple text",
+      name: "Dr. Sanjay Thakrar",
+      role: "Founder",
       image: image, 
       socialMedia: {
         facebook: "https://facebook.com/lorem",
@@ -20,8 +20,8 @@ const teamMembers = [
 
     {
       id: 2,
-      name: "Ipsum Dolor",
-      role: "Example Role",
+      name: "Dr. Uma Jagadeesan",
+      role: "Head of Operations & Stratergy",
       image: image,
       socialMedia: {
         facebook: "https://facebook.com/ipsum",
@@ -36,8 +36,8 @@ const teamMembers = [
 
     {
       id: 3,
-      name: "John Doe",
-      role: "Lead Developer",
+      name: "P.Udhayakumar",
+      role: "Senior Advisor -New Ventures",
       image: image,
       socialMedia: {
         facebook: "https://facebook.com/johndoe",
@@ -52,8 +52,8 @@ const teamMembers = [
 
     {
       id: 4,
-      name: "Jane Smith",
-      role: "Designer",
+      name: "Paresh Pujani",
+      role: "Simple Text",
       image: image,
       socialMedia: {
         facebook: "https://facebook.com/janesmith",

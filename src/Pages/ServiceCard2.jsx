@@ -24,13 +24,13 @@ const ServiceCard2 = () => {
           <div className="ServiceCard-2">
             <div className="ServiceCard2-head">
               <img src={assets.serviceCircle} alt="" />
-              <h1>GENERAL MANAGEMENT CONSULTING SERVICE</h1>
+              <h1>Compliance & Secretarial</h1>
               <p>
-                Our management consulting services focus on driving measurable
-                improvements across your organization’s strategic and
-                operational dimensions. We work closely with clients to identify
-                key opportunities for growth, streamline processes, and optimize
-                business performance.
+              Our Compliance & Secretarial services are designed to simplify complex regulatory requirements,
+               providing businesses with the assurance they need to operateseamlessly in any jurisdiction.
+                We specialize in both local and international regulatory frameworks, ensuring businesses meet their
+                 obligations without compromising their strategic goals.
+
               </p>
             </div>
             <div className="ServiceCard2-img">
@@ -46,6 +46,7 @@ const ServiceCard2 = () => {
               icon={service.icon}
               heading={service.heading}
               content={service.content}
+              popContent={service.popContent}
               para1={service.para1}
               para2={service.para2}
               para3={service.para3}

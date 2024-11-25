@@ -1,13 +1,48 @@
-import React from "react";
+import { useEffect, useRef } from "react";
 import Header from "../Components/Header";
 import SectionTitle from "../Components/SectionTitle";
 import { assets } from "../assets/assets";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const AboutUs = () => {
+  const sectionRef1 = useRef(null);
+  const sectionRef2 = useRef(null);
+  const sectionRef3 = useRef(null);
+
+  useEffect(() => {
+    if (window.innerWidth > 1000) {
+      gsap.registerPlugin(ScrollTrigger);
+
+      const animateSection = (ref) => {
+        const el = ref.current;
+        if (el) {
+          gsap.to(el, {
+            scale: 0.8,
+            filter: "blur(10px)",
+            scrollTrigger: {
+              trigger: el,
+              start: "top -10%",
+              end: "bottom center",
+              scrub: 1, // Use scrub for smooth animation
+              ease: "power2.out", // Smooth easing function
+              markers: false, // Optional: remove scroll markers
+            },
+            duration: 2, // Smooth transition duration
+          });
+        }
+      };
+
+      animateSection(sectionRef1);
+      animateSection(sectionRef2);
+      animateSection(sectionRef3);
+    }
+  }, []);
+
   return (
     <div>
       <Header
-        title="LOREM IPSUM"
+        title="Our Story"
         para="Excellence at the Intersection of Strategy and Compliance"
         image={
           "https://images.pexels.com/photos/15205160/pexels-photo-15205160/free-photo-of-photograph-of-a-black-vintage-camera.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -16,19 +51,18 @@ const AboutUs = () => {
 
       <div className="paraSlide">
         {/* Section 1 */}
-        <div className="section">
-          <SectionTitle sectionTitle={"WHO WE ARE?"} sectionPara={"ABOUT US"} />
-
+        <div className="section" ref={sectionRef1}>
+          <SectionTitle sectionTitle={"OVERVIEW"} sectionPara={"ABOUT US"} />
           <div className="aboutUs">
             {/* LeftSide */}
             <div className="leftSide">
               <div className="leftSideGrid">
                 <div>
-                  <img src={assets.aboutImg_1} alt="" />
+                  <img src='https://via.placeholder.com/300' alt="" />
                 </div>
                 <div>
-                  <img src={assets.aboutImg_2} alt="" />
-                  <img src={assets.aboutImg_3} alt="" />
+                  <img src='https://via.placeholder.com/300' alt="" />
+                  <img src='https://via.placeholder.com/300' alt="" />
                 </div>
               </div>
             </div>
@@ -36,39 +70,24 @@ const AboutUs = () => {
             {/* RightSide */}
             <div className="rightSide">
               <p>
-                Consulven IFSC Pvt Ltd is A Pioneering Advisory And Compliance
-                Firm Based In The Heart Of Gujarat Guft City IFSC. With Our
-                Bespoke Suite Of Management Consulting, Compliance And
-                Secretarial Solutions, We Specialize In Helping Organizations
-                Across A Broad Range Of Sectors Enhance Their Strategic
-                Positioning. Streamline Operations, And Navigate Comples
-                Regulatory Environments.
+                Consulven IFSC Pvt Ltd is a pioneering advisory and compliance firm based in the heart of Gujarat’s Gift City IFSC. With our bespoke suite of management consulting, compliance, and secretarial solutions, we specialize in helping organizations across a broad range of sectors enhance their strategic positioning, streamline operations, and navigate complex regulatory environments.
               </p>
 
               <p>
-                Our Team Of Experts Deep Industry Expertise, Coupled With Our
-                String Network In Markets Across Asia, The Middle East, And
-                Africa, Enable Us To Provide Tailored Solutions That Deliver
-                Measurable Impact. Whether Supporting Business Transformations,
-                Ensuring Regulatory Compliance, Or Guiding Strategic
-                Investments, Consulven Is Committed To Unlocking Value And
-                Driving Sustainable Growth For Our Clients.
+                Our team of experts’ deep industry expertise, coupled with our strong network in markets across Asia, the Middle East, and Africa, enable us to provide tailored solutions that deliver measurable impact. Whether supporting business transformations, ensuring regulatory compliance, or guiding strategic investments, Consulven is committed to unlocking value and driving sustainable growth for our clients.
               </p>
             </div>
           </div>
         </div>
 
         {/* Section 2 */}
-        <div className="section">
+        <div className="section" ref={sectionRef2}>
           <SectionTitle sectionTitle={"OUR MISSION & VISION"} />
-
           <div className="bgGradient">
             <div className="vision">
-              <h1>LOREM IPSUM</h1>
+              <h1>Vision</h1>
               <p>
-                To be the partner of choice for businesse aiming to achieve
-                excellence in governance, compilance, and strategy in today's
-                rapidly evolving international markets.
+                To position ourselves as the partner of choice for organizations seeking mastery in governance, compliance, and strategy amidst the complexities of evolving global markets.
               </p>
 
               <div className="visionImg">
@@ -79,11 +98,9 @@ const AboutUs = () => {
               </div>
 
               <div className="mission">
-                <h1>LOREM IPSUM</h1>
+                <h1>Mission</h1>
                 <p>
-                  To be the partner of choice for businesse aiming to achieve
-                  excellence in governance, compilance, and strategy in today's
-                  rapidly evolving international markets.
+                  Our mission at Consulven is to enable businesses to succeed in a dynamic market through expert advisory and strategic support. Anchored in integrity, professionalism, and client satisfaction, we offer global and Gift City clients, including key IFSC stakeholders, the essential tools to achieve excellence.
                 </p>
 
                 <img src={assets.arrow} className="arrow" />
@@ -97,39 +114,38 @@ const AboutUs = () => {
         {/* Section 3 */}
         <div className="section last">
           <SectionTitle sectionTitle={"OUR VALUES"} />
-
-          <div class="card-container">
-            <div class="card">
-              <div class="bg">
+          <div className="card-container">
+            <div className="card">
+              <div className="bg">
                 <img src={assets.sample} alt="" />
                 <h2>INTEGRITY</h2>
-                <p>Upholding the highest standards of transparency, ethics, and responsibility in all our engagements.</p>
+                <p>Adhering to uncompromising standards of honesty, ethical conduct, and responsibility in all our interactions and commitments.</p>
               </div>
-              <div class="blob"></div>
+              <div className="blob"></div>
             </div>
-            <div class="card">
-              <div class="bg">
-              <img src={assets.sample} alt="" />
+            <div className="card">
+              <div className="bg">
+                <img src={assets.sample} alt="" />
                 <h2>CLIENT-CENTRICITY</h2>
-                <p>We place our clients at the center of everything we do, ensuring tailored, actionable solutions that address their specific challenges and goals.</p>
+                <p>Every decision we make revolves around our clients, providing personalized solutions designed to tackle their unique challenges and drive meaningful outcomes.</p>
               </div>
-              <div class="blob"></div>
+              <div className="blob"></div>
             </div>
-            <div class="card">
-              <div class="bg">
-              <img src={assets.sample} alt="" />
+            <div className="card">
+              <div className="bg">
+                <img src={assets.sample} alt="" />
                 <h2>INNOVATION</h2>
-                <p>Embracing the latest technologies, methodologies, and frameworks to solve today’s most complex business challenges.</p>
+                <p>Adopting emerging technologies and innovative frameworks to navigate and resolve the complexities of today’s business landscape.</p>
               </div>
-              <div class="blob"></div>
+              <div className="blob"></div>
             </div>
-            <div class="card">
-              <div class="bg">
-              <img src={assets.sample} alt="" />
+            <div className="card">
+              <div className="bg">
+                <img src={assets.sample} alt="" />
                 <h2>AGILITY</h2>
-                <p>We adapt quickly to the changing regulatory and market landscapes, ensuring our clients stay ahead of the curve.</p>
+                <p>We stay one step ahead of regulatory and market changes, enabling our clients to anticipate challenges and seize new opportunities.</p>
               </div>
-              <div class="blob"></div>
+              <div className="blob"></div>
             </div>
           </div>
         </div>

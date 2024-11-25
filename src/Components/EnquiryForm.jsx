@@ -47,8 +47,8 @@ const EnquiryForm = () => {
                     />
                   </div>
                   <div className="Homepage-choose-bottom-content">
-                    <h1>Lets Request a schedule for free consultation</h1>
-
+                    <h1>We look forward to helping you.</h1>
+                    <h2>Please fill out the form below, and one of our representatives will get in touch with you shortly</h2>
                     <p>
                       <FontAwesomeIcon
                         icon={faPhoneVolume}
@@ -96,8 +96,16 @@ const EnquiryForm = () => {
                         autoComplete="off"
                       />
                     </div>
-                  </div>
-
+                  
+                  <div className="home-form-details">
+                      <input
+                        type="text"
+                        id="companyName"
+                        name="company_name"
+                        placeholder="Company Name"
+                        autoComplete="off"
+                      />
+                    </div>
                   <div className="home-form-details">
                     <textarea
                       id="message"
@@ -107,6 +115,7 @@ const EnquiryForm = () => {
                       required
                       autoComplete="off"
                     />
+                  </div>
                   </div>
                   <div className="home-form-button">
                     <button className="home-form-text" type="submit">

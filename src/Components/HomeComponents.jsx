@@ -1,18 +1,55 @@
-import  { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faCircle } from "@fortawesome/free-solid-svg-icons";
 import { assets } from "../assets/assets";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import CustomCursor from "../Components/cursorMain.jsx";
 import EnquiryForm from "./EnquiryForm.jsx";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const HomeComponents = () => {
-  
   const [isMoving, setIsMoving] = useState(false);
-
 
   const handleMouseHover = () => setIsMoving(true);
   const handleMouseMove = () => setIsMoving(false);
+
+  const sectionRef1 = useRef(null);
+  const sectionRef2 = useRef(null);
+
+  useEffect(() => {
+    if (window.innerWidth > 1000) {
+      gsap.registerPlugin(ScrollTrigger);
+
+      const el1 = sectionRef1.current;
+      const el2 = sectionRef2.current;
+      if (el1) {
+        gsap.to(el1, {
+          scale: 0.8,
+          filter: "blur(10px)",
+          opacity: 0.4,
+          scrollTrigger: {
+            trigger: el1,
+            start: "top -10%",
+            end: "bottom center",
+            scrub: true,
+          },
+        });
+      }
+      if (el2) {
+        gsap.to(el2, {
+          scale: 0.8,
+          filter: "blur(10px)",
+          scrollTrigger: {
+            trigger: el2,
+            start: "top -20%",
+            end: "bottom center",
+            scrub: true,
+          },
+        });
+      }
+    }
+  }, []);
 
   return (
     <div className="Homepage-about-container">
@@ -22,16 +59,16 @@ const HomeComponents = () => {
 
       {/* <img className="Homepage-about-linevec" src={assets.linevec} /> */}
       <ul id="Homepage-cards">
-        <li className="Homepage-card" id="Homepage-card_1">
+        <li className="Homepage-card" id="Homepage-card_1" ref={sectionRef1}>
           <div className="Homepage-about-main">
             <img className="Homepage-about-linevector3" src={assets.linevec} />
             <img className="Homepage-about-linevector4" src={assets.linevec} />
 
             <div className="Homepage-about-img">
               {isMoving && (
-                  <CustomCursor
+                <CustomCursor
                   cursorImage={assets.logoWhite}
-                  cursorSize={{ width: 150, height: 150 }}
+                  cursorSize={{ width: 80, height: 80 }}
                 />
               )}
               <img
@@ -51,18 +88,18 @@ const HomeComponents = () => {
                     icon={faCircle}
                     style={{ color: "#228b22" }}
                   />
-                  Lorem ipsum dolor sit amet consectetur.
+                  About us
                 </p>
               </div>
               <div className="Homepage-about-content-main">
-                <h1>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </h1>
+                <h1>who are we</h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-                  voluptatum, consectetur alias suscipit laborum repellat aut
-                  porro ab similique et necessitatibus nam enim minima unde
-                  mollitia sapiente voluptatem saepe. Amet.
+                  We at Consulven IFSC specialize in creating adaptive solutions
+                  that respond to your business’s specific challenges. Offering
+                  a full spectrum of consulting, compliance, and secretarial
+                  services, we drive growth and foster transformation. Merging
+                  global knowledge with local insights, we empower businesses to
+                  reach today’s goals and prepare for tomorrow’s successes.
                 </p>
 
                 <div className="Homepage-about-content-flip">
@@ -89,15 +126,15 @@ const HomeComponents = () => {
                 </div>
                 <div className="Homepage-about-content-button">
                   <Link to="/about">
-                  <button>
-                    <FontAwesomeIcon
-                      className="Homepage-about-content-button-icon"
-                      icon={faArrowRight}
-                      size="s"
-                      style={{ color: "#000000" }}
-                    />
-                    Know More
-                  </button>
+                    <button>
+                      <FontAwesomeIcon
+                        className="Homepage-about-content-button-icon"
+                        icon={faArrowRight}
+                        // size="s"
+                        style={{ color: "#000000" }}
+                      />
+                      Know More
+                    </button>
                   </Link>
                 </div>
               </div>
@@ -107,7 +144,7 @@ const HomeComponents = () => {
             </div>
           </div>
         </li>
-        <li className="Homepage-card" id="Homepage-card_2">
+        <li className="Homepage-card" id="Homepage-card_2" >
           <div className="Homepage-choose-main">
             <div className="Homepage-choose-head">
               <h1>
@@ -121,7 +158,7 @@ const HomeComponents = () => {
                 US
               </h1>
             </div>
-            <div className="Homepage-choose-content">
+            <div className="Homepage-choose-content" ref={sectionRef2}>
               <div className="Homepage-choose-dot">
                 <img className="Homepage-choose-dot" src={assets.dotvec} />
               </div>
@@ -141,33 +178,33 @@ const HomeComponents = () => {
                 <div className="Homepage-choose-content-main">
                   <img src={assets.abouticon} />
                   <div className="Homepage-choose-content-text">
-                    <h1>Client-Centric Solutions</h1>
+                    <h1>Customer-Focused Strategies</h1>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      est sint porro doloribus velit. Cupiditate, ducimus
-                      doloremque!
+                      We provide results-driven solutions thatpredict and
+                      address risks in dynamic markets, offering personalized
+                      careand accuracy throughout every phase of the process.
                     </p>
                   </div>
                 </div>
                 <div className="Homepage-choose-content-main">
                   <img src={assets.abouticon} />
                   <div className="Homepage-choose-content-text">
-                    <h1>Client-Centric Solutions</h1>
+                    <h1>Holistic Integration:</h1>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      est sint porro doloribus velit. Cupiditate, ducimus
-                      doloremque!
+                      By aligning operational, financial, and
+                      complianceframeworks, we create unified solutions designed
+                      to offer sustainable valueover the long term.
                     </p>
                   </div>
                 </div>
                 <div className="Homepage-choose-content-main">
                   <img src={assets.abouticon} />
                   <div className="Homepage-choose-content-text">
-                    <h1>Client-Centric Solutions</h1>
+                    <h1>Regulatory and Industry Expertise</h1>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      est sint porro doloribus velit. Cupiditate, ducimus
-                      doloremque!
+                      With innovation at the forefront, weprovide strategic
+                      guidance built on deep market knowledge and
+                      regulatoryproficiency.
                     </p>
                   </div>
                 </div>
@@ -176,7 +213,7 @@ const HomeComponents = () => {
                 <img src={assets.chooseVector} />
               </div>
             </div>
-            <EnquiryForm/>
+            <EnquiryForm />
           </div>
         </li>
       </ul>
@@ -185,10 +222,11 @@ const HomeComponents = () => {
           <h1>global expertise</h1>
           <h2>connecting markets, bridging continents</h2>
           <p>
-            From our base in Gift City IFSC, we cater to diverse global
-            businesses and understand the nuance of each region’s unique
-            dynamics.
+            Headquartered in Gift City IFSC, we work with international
+            businesses, acknowledgingthe specific challenges and opportunities
+            within each regional landscape.
           </p>
+          <h5>Discover our key markets.</h5>
         </div>
         <img src={assets.map} alt="" />
       </div>

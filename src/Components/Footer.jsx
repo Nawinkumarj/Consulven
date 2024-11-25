@@ -1,13 +1,11 @@
 import React from 'react'
-import logo from "../assets/Consulven Logo.png"
 import "../App.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay } from '@fortawesome/free-solid-svg-icons'
 import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
-import footerpng from "../assets/footer.png"
-import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa6";
 import {assets} from "../assets/assets.js"
 import {Link} from "react-router-dom"
 
@@ -25,7 +23,7 @@ const Footer = () => {
                     <div className='Footer-content'>
                         <div className='Footer-joinus'>
                             <h1>Join Our Mailing List</h1>
-                            <p>Stay Updated with the Latest Insights,News and Offerings from Consulven IFSC</p>
+                            <p>Stay Updated with the Latest Insights, News and Offerings from Consulven IFSC</p>
                             <div className='Footer-joinus-form'>
                                 <form>
                                     <div className="input-container">
@@ -55,13 +53,13 @@ const Footer = () => {
 
                     </div>
                     <div className='Footer-talktoUS'>
-                        <h1>talk to our team</h1>
-                        <p>Ready to start your journey? Contact our Team
-                            today to learn more about how we can help your business </p>
+                        <h1>Have a Word with Us</h1>
+                        <p>Our team is ready to assist with your queries and
+                             provide solutions. Connect with ustoday! </p>
                         <div className='Footer-talktoUS-detail'>
                             <p><FontAwesomeIcon icon={faPhoneVolume} className='Footer-talktoUs-icon' />+91-xxxxx-xxxxx</p>
                             <p><FontAwesomeIcon icon={faEnvelope} className='Footer-talktoUs-icon' />info@consulven.com</p>
-                            <p><FontAwesomeIcon icon={faLocationDot} className='Footer-talktoUs-icon' />N0.13 Chandrabagh Avneue,<br />Mylapore</p>
+                            <p><FontAwesomeIcon icon={faLocationDot} className='Footer-talktoUs-icon' />Unit No. 51, “The Platform”,<br />Ground floor, 11 T2, Block-11,<br/>GIFT SEZ, Gift City,<br/>Gandhinagar - 382355</p>
                         </div>
                     </div>
 

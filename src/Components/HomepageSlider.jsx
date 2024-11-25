@@ -17,22 +17,22 @@ const HomePageSlider = () => {
     {
       image:
         "https://media.istockphoto.com/id/517188688/photo/mountain-landscape.webp?b=1&s=612x612&w=0&k=20&c=81f5HaMtoPNUrdfa4hnS8NcwEgD9tH2nnTUBu25Msug=",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing",
-      textpara:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptatum, consectetur alias suscipit laborum repellat aut porro ab similique et necessitatibus nam enim minima unde mollitia sapiente voluptatem saepe. Amet.",
+      text: "Shaping opportunities into outcomes",
+      textpara:"Propelling your business forward with expert insights, visionary solutions, and constant encouragement.",
       textPosition: "left",
     },
     {
       image:
         "https://img.freepik.com/free-photo/beautiful-mountains-landscape_23-2150787850.jpg?size=626&ext=jpg",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing",
-      textpara:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptatum, consectetur alias suscipit laborum repellat aut porro ab similique et necessitatibus nam enim minima unde mollitia sapiente voluptatem saepe. Amet.",
+      text: "Positioning Your Business for Future Growth",
+      textpara:"Access our cross-border financial insights and well-crafted strategies to nurture enduring progress.",
       textPosition: "center",
     },
     {
       image:
         "https://cdn.pixabay.com/photo/2017/02/01/22/02/mountain-landscape-2031539_640.jpg",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing",
-      textpara:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptatum, consectetur alias suscipit laborum repellat aut porro ab similique et necessitatibus nam enim minima unde mollitia sapiente voluptatem saepe. Amet.",
+      text: "Tackling Complexity with Determination",
+      textpara:" Align with Consulven IFSC to strengthen your compliance strategy and fine-tune operations to thrive in any jurisdiction.",
       textPosition: "right",
     },
   ];

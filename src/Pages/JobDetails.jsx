@@ -231,7 +231,7 @@ const JobDetails = () => {
           <input type="text" placeholder="Job Type" required />
         </div>
         <div className="fileUploadContainer">
-          <h3 className="uploadTitle">Upload your Resume</h3>
+          <h3 className="uploadTitle">Upload your CV and tell us how you can make an impact at Consulven. </h3>
           <div
             className={`upload-section ${isDragging ? "drag-active" : ""}`}
             onDragEnter={handleDragEnter}

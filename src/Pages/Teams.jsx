@@ -27,11 +27,10 @@ const Teams = () => {
                 </div>
                 <div className='teams-content'>
                     <div className='teams-content-para'>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, maxime quas similique
-                            a totam incidunt. Possimus sint, ipsum dolorem corrupti voluptas architecto id, unde
-                            earum nobis in perferendis fuga voluptatem.Lorem ipsum dolor sit amet consectetur adipisicing elit. In, maxime quas similique
-                            a totam incidunt. Possimus sint, ipsum dolorem corrupti voluptas architecto id, unde
-                            earum nobis in perferendis fuga voluptatem.</p>
+                        <p>Steered by a leadership team with vast experience across finance, consulting,regulatory affairs, and operations, Consulven IFSC is equipped
+                             to offer forward-thinking strategies that help clients navigate challenges and unlock growth opportunities. The team’s diverse backgrounds
+                              bring fresh perspectives to problem-solving and business transformation. By leveraging insights from multiple disciplines,
+                               we deliver strategies that address current needs and prepare businesses for future growth.</p>
                     </div>
                     <div className='teams-content-cards'>
                         {teamMembers.map(member => (

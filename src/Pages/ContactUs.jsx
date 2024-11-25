@@ -9,7 +9,10 @@ import Header from '../Components/Header'
 const ContactUs = () => {
   return (
     <div className="contact-container">
-           <Header title='LOREM IPSUM' para='Excellence at the Intersection of Strategy and Compliance' image={"https://images.pexels.com/photos/27509020/pexels-photo-27509020/free-photo-of-b-w-pentax.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} />
+           <Header title='Get in Touch with Us' 
+           para='We are here to assist you. Whether you have a question about our services,  we are just a message away.' 
+           image={"https://images.pexels.com/photos/27509020/pexels-photo-27509020/free-photo-of-b-w-pentax.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"}
+            />
  
       <div className="contact-main">
         <div className="contact-head">
@@ -38,19 +41,19 @@ const ContactUs = () => {
               <div
                 className="contact-details-section" >
                   <div className="contact-details-icon">
-                <img src={assets.abouticon}/>
+                <img src={assets.location}/>
                 </div>
-                <p>No.18 Chandrabagh Avenue</p>
+                <p>Unit No. 51, “The Platform”<br/>GIFT SEZ, Gift City</p>
               </div>
               <div className="contact-details-section">
               <div className="contact-details-icon">
-                <img src={assets.abouticon}/>
+                <img src={assets.mail}/>
                 </div>
                 <p>consulven@gmail.com</p>
               </div>
               <div className="contact-details-section">
               <div className="contact-details-icon">
-                <img src={assets.abouticon}/>
+                <img src={assets.phone}/>
                 </div>
                 <p>+91 9610765860</p>
               </div>
@@ -58,6 +61,12 @@ const ContactUs = () => {
           </div>
           </div>
         </div>
+        <div className="contact-map">
+        <SectionTitle sectionTitle={"VISIT US"}  />
+          
+       
+        <img src={assets.map} alt="" />
+      </div>
       </div>
     </div>
   );

@@ -43,6 +43,9 @@ import popImg from "../assets/popImg.svg"
 import logoWhite from "../assets/logoWhite.svg"
 import clickImg from "../assets/clickImg.svg"
 import map from "../assets/mapgif.gif"
+import mail from "../assets/mailImg.svg"
+import phone from "../assets/phoneImg.svg"
+import location from "../assets/locImg.svg"
 
 export const assets = {
     logo,
@@ -89,4 +92,7 @@ export const assets = {
     success_Icon,
     clickImg,
     map,
+    mail,
+    phone,
+    location,
 }
