@@ -61,9 +61,9 @@ const Careers = () => {
           <a href="https://youtu.be/EngW7tLk6R8?si=DC-M41uuegY0F8F0" target="_blank">
             <div className='sample1'>
               <div className='sample2'>
-                <img src="https://images.pexels.com/photos/29153940/pexels-photo-29153940/free-photo-of-smiling-young-woman-in-a-professional-attire.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
+                <img src="https://images.pexels.com/photos/29153940/pexels-photo-29153940/free-photo-of-smiling-young-woman-in-a-professional-attire.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""/>
                 <div className='playBtn'>
-                  <img src={assets.play_icon} />
+                  <img src={assets.play_icon} alt=""/>
                 </div>
               </div>
             </div>
@@ -106,10 +106,8 @@ const Careers = () => {
           <img src={assets.search_icon} alt="" />
           <input type="text" placeholder="Search by: Job title, Position, Keyword..." value={searchTerm} onChange={e => setSearchTerm(e.target.value)} />
         </div>
-
         <div className='rightSide'>
           <img src={assets.filter_icon} alt="" onClick={() => setIsDropdownOpen(!isDropdownOpen)} />
-
           <div className='dropdown'>
             {isDropdownOpen && (
             <div className="dropdown-options">

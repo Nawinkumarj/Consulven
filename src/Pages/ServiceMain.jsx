@@ -9,8 +9,8 @@ const ServiceMain = () => {
   return (
     <div className="ServiceMain-container">
       <Header
-        title="LOREM IPSUM"
-        para="Excellence at the Intersection of Strategy and Compliance"
+        title="OUR SERVICES"
+        para="Consulting, Compliance, Secretarial"
         image={
           "https://images.pexels.com/photos/27509020/pexels-photo-27509020/free-photo-of-b-w-pentax.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         }
@@ -25,13 +25,13 @@ const ServiceMain = () => {
               <div className="serviceMain1-vector1"></div>
 
               <h2>What We Do</h2>
-              <h1>Browse Our Expertise</h1>
+              <h1>Browse Our <br/> Expertise</h1>
               <div className="serviceMain1-vector2"></div>
             </div>
             <p>
               Through our global expertise across two key areas of need ―
-              Management Consultingand Compliance & Secretarial― our clients are
-              better advised within, and across, theirstrategic and operational
+              Management Consulting and Compliance & Secretarial― our clients are
+              better advised within, and across, their strategic and operational
               frameworks.
             </p>
           </div>
@@ -46,7 +46,7 @@ const ServiceMain = () => {
             number={"01"}
             heading={"Management Consulting"}
             content={
-              "Our management consulting services focus on driving measurable improvements across your organization’s strategic and operational dimensions."
+              "Driving growth and optimizing performance through strategic and operational excellence. Empowering organizations to unlock their full potential."
             }
             path="/service/Card1"
           />

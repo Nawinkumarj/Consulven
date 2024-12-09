@@ -14,7 +14,7 @@ const ServiceSection = ({icon, number, mainImg, heading, content, path}) => {
     <div className='serviceSection-main'>
         <div className='serviceSection1'>
             <div className='serviceSection1-content'>
-                <img src={icon}alt="icon" />
+                <img src={icon} alt="icon" />
                 <h1>{number}</h1>
             </div>
             <div className='serviceSection1-content-right'>

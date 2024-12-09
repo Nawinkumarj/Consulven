@@ -49,6 +49,18 @@ const HomePageSlider = () => {
                 
               >
                 <img src={slide.image} alt={`Slide ${index}`}  />
+                <div className="slide-wave">
+                  <svg
+                    viewBox="0 0 500 150"
+                    preserveAspectRatio="none"
+                   
+                  >
+                    <path
+                      d="M-68.05,54.62 C615.91,179.61 556.09,167.80 525.05,-150.67 L516.02,214.07 L-0.00,149.60 Z"
+                      
+                    ></path>
+                  </svg>
+                </div>
                 <div className={`carousel-text ${slide.textPosition}`}>
                   <h3>{slide.text}</h3>
                   <p>{slide.textpara}</p>

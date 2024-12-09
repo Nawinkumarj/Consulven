@@ -15,7 +15,7 @@ const Footer = () => {
         <div className='Footer-container'>
 
             <div className='Footer-body'>
-                 <img className='Footer-container-img' src={assets.footerBG} />
+                 <img className='Footer-container-img' src={assets.footerBG} alt=""/>
                 <div className='Footer-main'>
                     <div className='Footer-logo'>
                         <img src={assets.footerLogo} alt='Consulven' />
@@ -53,9 +53,7 @@ const Footer = () => {
 
                     </div>
                     <div className='Footer-talktoUS'>
-                        <h1>Have a Word with Us</h1>
-                        <p>Our team is ready to assist with your queries and
-                             provide solutions. Connect with ustoday! </p>
+                        <h1>Our team is ready to assist you</h1>
                         <div className='Footer-talktoUS-detail'>
                             <p><FontAwesomeIcon icon={faPhoneVolume} className='Footer-talktoUs-icon' />+91-xxxxx-xxxxx</p>
                             <p><FontAwesomeIcon icon={faEnvelope} className='Footer-talktoUs-icon' />info@consulven.com</p>

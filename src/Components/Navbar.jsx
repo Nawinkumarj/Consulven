@@ -29,13 +29,13 @@ const Navbar = () => {
               <div>
                 <img src={assets.location_icon} alt="Location Icon" />
               </div>
-              <p>No, 18 Ganesh Arcade, Mylapore</p>
+              <p>GIFT SEZ, Gift City, Gandhinagar - 382355</p>
             </div>
             <div className="topSection">
               <div>
                 <img src={assets.mail_icon} alt="Mail Icon" />
               </div>
-              <p>abcd@gmail.com</p>
+              <p>info@consulven.com</p>
             </div>
           </div>
 

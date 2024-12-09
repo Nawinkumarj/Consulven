@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { assets } from "../assets/assets";
 import { GrSend } from "react-icons/gr";
@@ -6,127 +6,210 @@ import { faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
 import CustomCursor from "../Components/cursorMain.jsx";
 
 const EnquiryForm = () => {
-    const [isFormVisible, setIsFormVisible] = useState(false);
+  const [isFormVisible, setIsFormVisible] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
-    
+  const [formData, setFormData] = useState({
+    user_name: '',
+    user_email: '',
+    user_phone: '',
+    company_name: '',
+    user_message: ''
+  });
+  const [errors, setErrors] = useState({
+    user_name: '',
+    user_email: '',
+    user_phone: '',
+    company_name: ''
+  });
+
   const handleChooseBottomClick = () => {
     setIsFormVisible(true);
   };
 
-  const handleSend = (e) => {
-    e.preventDefault();
-
-    setIsFormVisible(false);
-  };
-
   const handleMouseEnter = () => setIsHovering(true);
   const handleMouseLeave = () => setIsHovering(false);
+
+  const validateForm = () => {
+    const newErrors = {};
+    let isValid = true;
+
+    // Name validation
+    if (!formData.user_name) {
+      newErrors.user_name = 'Name is required.';
+      isValid = false;
+    }
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!formData.user_email) {
+      newErrors.user_email = 'Email is required.';
+      isValid = false;
+    } else if (!emailRegex.test(formData.user_email)) {
+      newErrors.user_email = 'Invalid email format.';
+      isValid = false;
+    }
+
+    // Phone number validation
+    const phoneRegex = /^[0-9]{10}$/;
+    if (!formData.user_phone) {
+      newErrors.user_phone = 'Phone number is required.';
+      isValid = false;
+    } else if (!phoneRegex.test(formData.user_phone)) {
+      newErrors.user_phone = 'Phone number must be 10 digits.';
+      isValid = false;
+    }
+
+    // Company name validation
+    if (!formData.company_name) {
+      newErrors.company_name = 'Company name is required.';
+      isValid = false;
+    }
+
+    setErrors(newErrors);
+    return isValid;
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+  const handleSend = (e) => {
+    e.preventDefault();
+    if (validateForm()) {
+      setIsFormVisible(false);
+      alert('Form submitted successfully!');
+      setFormData({
+        user_name: '',
+        user_email: '',
+        user_phone: '',
+        company_name: '',
+        user_message: ''
+      });
+      setErrors({});
+    }
+  };
+
   return (
     <div className="home-bottom-container">
-              <div className="Homepage-choose-bottom">
-                {isHovering && (
-                  <CustomCursor
-                    cursorImage={assets.clickImg}
-                    cursorSize={{ width: 150, height: 150 }}
-                  />
-                )}
-                <div
-                  className={`Homepage-choose-bottom-main ${
-                    isFormVisible ? "show-form" : ""
-                  }`}
-                  style={{ backgroundImage: `url(${assets.talkwithBg})` }}
-                  onClick={handleChooseBottomClick}
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave}
-                >
-                  <div className="Homepage-choose-bottom-img">
-                    <img
-                      className="homepage-talkwith"
-                      src={assets.talkwith}
-                      alt=""
-                    />
-                  </div>
-                  <div className="Homepage-choose-bottom-content">
-                    <h1>We look forward to helping you.</h1>
-                    <h2>Please fill out the form below, and one of our representatives will get in touch with you shortly</h2>
-                    <p>
-                      <FontAwesomeIcon
-                        icon={faPhoneVolume}
-                        className="enquiry-talktoUs-icon"
-                      />
-                      Call for more Info (+91 98610*****)
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className={`home-form ${isFormVisible ? "show-form" : ""}`}>
-                <div className="home-form-head">
-                  <h1>enquiry form</h1>
-                </div>
-                <form autoComplete="off" onSubmit={handleSend}>
-                  <div className="home-form-name">
-                    <div className="home-form-details">
-                      <input
-                        type="text"
-                        id="name"
-                        name="user_name"
-                        placeholder="Your Name"
-                        required
-                        autoComplete="off"
-                      />
-                    </div>
-
-                    <div className="home-form-details">
-                      <input
-                        type="email"
-                        id="email"
-                        name="user_email"
-                        placeholder="Email Address"
-                        required
-                        autoComplete="off"
-                      />
-                    </div>
-                    <div className="home-form-details">
-                      <input
-                        type="tel"
-                        id="phoneNumber"
-                        name="user_phone"
-                        placeholder="Phone Number"
-                        required
-                        autoComplete="off"
-                      />
-                    </div>
-                  
-                  <div className="home-form-details">
-                      <input
-                        type="text"
-                        id="companyName"
-                        name="company_name"
-                        placeholder="Company Name"
-                        autoComplete="off"
-                      />
-                    </div>
-                  <div className="home-form-details">
-                    <textarea
-                      id="message"
-                      name="user_message"
-                      placeholder="Message"
-                      rows={2}
-                      required
-                      autoComplete="off"
-                    />
-                  </div>
-                  </div>
-                  <div className="home-form-button">
-                    <button className="home-form-text" type="submit">
-                      <GrSend />
-                      Send
-                    </button>
-                  </div>
-                </form>
-              </div>
+      <div className="Homepage-choose-bottom">
+        {isHovering && (
+          <CustomCursor
+            cursorImage={assets.clickImg}
+            cursorSize={{ width: 150, height: 150 }}
+          />
+        )}
+        <div
+          className={`Homepage-choose-bottom-main ${
+            isFormVisible ? "show-form" : ""
+          }`}
+          style={{ backgroundImage: `url(${assets.talkwithBg})` }}
+          onClick={handleChooseBottomClick}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          <div className="Homepage-choose-bottom-img">
+            <img
+              className="homepage-talkwith"
+              src={assets.talkwith}
+              alt=""
+            />
+          </div>
+          <div className="Homepage-choose-bottom-content">
+            <h1>We look forward to helping you.</h1>
+            <h2>Please fill out the form below, and one of our representatives will get in touch with you shortly</h2>
+            <p>
+              <FontAwesomeIcon
+                icon={faPhoneVolume}
+                className="enquiry-talktoUs-icon"
+              />
+              Call for more Info (+91 98610*****)
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className={`home-form ${isFormVisible ? "show-form" : ""}`}>
+        <div className="home-form-head">
+          <h1>enquiry form</h1>
+        </div>
+        <form autoComplete="off" onSubmit={handleSend}>
+          <div className="home-form-name">
+            <div className="home-form-details">
+              <input
+                type="text"
+                id="name"
+                name="user_name"
+                placeholder="Your Name"
+                value={formData.user_name}
+                onChange={handleChange}
+                autoComplete="off"
+              />
+              {errors.user_name && <span className="error-message">{errors.user_name}</span>}
             </div>
-  )
-}
 
-export default EnquiryForm
+            <div className="home-form-details">
+              <input
+                type="email"
+                id="email"
+                name="user_email"
+                placeholder="Email Address"
+                value={formData.user_email}
+                onChange={handleChange}
+                autoComplete="off"
+              />
+              {errors.user_email && <span className="error-message">{errors.user_email}</span>}
+            </div>
+            <div className="home-form-details">
+              <input
+                type="tel"
+                id="phoneNumber"
+                name="user_phone"
+                placeholder="Phone Number"
+                value={formData.user_phone}
+                onChange={handleChange}
+                autoComplete="off"
+              />
+              {errors.user_phone && <span className="error-message">{errors.user_phone}</span>}
+            </div>
+
+            <div className="home-form-details">
+              <input
+                type="text"
+                id="companyName"
+                name="company_name"
+                placeholder="Company Name"
+                value={formData.company_name}
+                onChange={handleChange}
+                autoComplete="off"
+              />
+              {errors.company_name && <span className="error-message">{errors.company_name}</span>}
+            </div>
+
+            <div className="home-form-details">
+              <textarea
+                id="message"
+                name="user_message"
+                placeholder="Message"
+                rows={2}
+                value={formData.user_message}
+                onChange={handleChange}
+                autoComplete="off"
+              />
+            </div>
+          </div>
+          <div className="home-form-button">
+            <button className="home-form-text" type="submit">
+              <GrSend />
+              Send
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  );
+};
+
+export default EnquiryForm;

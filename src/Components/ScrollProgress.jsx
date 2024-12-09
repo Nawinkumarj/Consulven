@@ -35,7 +35,7 @@ function ScrollProgress() {
         background: `conic-gradient(#228b22 ${scrollValue}%, transparent ${scrollValue}%)`,
       }}
     >
-      <span id="progress-value">{scrollValue}%</span>
+      <h1 id="progress-value">{scrollValue}%</h1>
     </div>
   );
 }

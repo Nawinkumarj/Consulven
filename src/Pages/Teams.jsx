@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import {FaLinkedinIn } from "react-icons/fa";
 import { useNavigate   } from 'react-router-dom';
 import teamMembers from '../data/teamData';
 import SectionTitle from "../Components/SectionTitle";
@@ -20,7 +20,7 @@ const Teams = () => {
 
     return (
         <div className='teams-container'>
-              <Header title='LOREM IPSUM' para='Excellence at the Intersection of Strategy and Compliance' image={"https://images.pexels.com/photos/27509020/pexels-photo-27509020/free-photo-of-b-w-pentax.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} />
+              <Header title='OUR PEOPLE' para='Meet our Leadership Team' image={"https://images.pexels.com/photos/27509020/pexels-photo-27509020/free-photo-of-b-w-pentax.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} />
             <div className='teams-main'>
                 <div className='teams-head'>
                 <SectionTitle sectionTitle={"OUR PEOPLE"}  />
@@ -46,7 +46,7 @@ const Teams = () => {
                                     cursorImage={assets.abouticon}
                                     cursorSize={{ width: 80, height: 80 }}
                                  />}
-                                    <img src={member.image} alt={member.name}   onMouseEnter={handleMouseEnter} 
+                                    <img src={member.image} alt={member.name} className='team-img' onMouseEnter={handleMouseEnter} 
                                         onMouseLeave={handleMouseLeave} />
                                     
                                     <div className='teams-content-name'>
@@ -55,14 +55,8 @@ const Teams = () => {
                                             <p>{member.role}</p>
                                         </div>
                                         <div className='teams-content-media'>
-                                            <a href={member.socialMedia.facebook} target="_blank" rel="noopener noreferrer">
-                                                <FaFacebookF className='teams-content-media-icons' color='white' />
-                                            </a>
                                             <a href={member.socialMedia.linkedin} target="_blank" rel="noopener noreferrer">
                                                 <FaLinkedinIn className='teams-content-media-icons' color='white' />
-                                            </a>
-                                            <a href={member.socialMedia.instagram} target="_blank" rel="noopener noreferrer">
-                                                <FaInstagram className='teams-content-media-icons' color='white' />
                                             </a>
                                         </div>
                                     </div>

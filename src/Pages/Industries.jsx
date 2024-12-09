@@ -1,4 +1,3 @@
-import React from 'react';
 import Header from '../Components/Header';
 import IndustriesSection from '../Components/IndustriesSection';
 
@@ -13,11 +12,26 @@ const industriesData = [
         sectionContentTitle: 'Public and Private Commercial Banks',
         sectionContentPara: 'The banking landscape is undergoing rapid transformation with evolving regulations, digitization, and changing customer expectations. Banks need agile strategies to stay competitive and ensure compliance while enhancing customer experience.',
         carouselData: [
-            { image: 'https://via.placeholder.com/300', content: 'Strategic Planning and Market Entry Advisory.' },
-            { image: 'https://via.placeholder.com/300', content: 'Risk Management and Regulatory Compliance.' },
-            { image: 'https://via.placeholder.com/300', content: 'Operational Efficiency and Digital Transformation Support.' },
-            { image: 'https://via.placeholder.com/300', content: 'M&A Due Diligence and Integration.' },
-            { image: 'https://via.placeholder.com/300', content: 'Business Continuity and Disaster Recovery Planning.' },
+            {
+                image: 'https://via.placeholder.com/300',
+                content: 'Strategic Planning and Market Entry Advisory.'
+            },
+            {
+                image: 'https://via.placeholder.com/300',
+                content: 'Risk Management and Regulatory Compliance.'
+            },
+            {
+                image: 'https://via.placeholder.com/300',
+                content: 'Operational Efficiency and Digital Transformation Support.'
+            },
+            {
+                image: 'https://via.placeholder.com/300',
+                content: 'M&A Due Diligence and Integration.'
+            },
+            {
+                image: 'https://via.placeholder.com/300',
+                content: 'Business Continuity and Disaster Recovery Planning.'
+            },
         ],
     },
     {
@@ -28,8 +42,14 @@ const industriesData = [
         sectionContentTitle: 'FINTECH, Asset Management Firms, Funds, AIFs',
         sectionContentPara: 'The financial services sector is at the forefront of innovation, with emerging technologies reshaping how businesses operate. Companies need to balance innovation with regulatory compliance while driving growth and customer trust.',
         carouselData: [
-            { image: 'https://via.placeholder.com/300', content: 'Digital transformation strategies for FINTECH and asset management.' },
-            { image: 'https://via.placeholder.com/300', content: 'Regulatory compliance (AML, KYC, FATCA).' },
+            {
+                image: 'https://via.placeholder.com/300',
+                content: 'Digital transformation strategies for FINTECH and asset management.' 
+            },
+            {
+                image: 'https://via.placeholder.com/300',
+                content: 'Regulatory compliance (AML, KYC, FATCA).'
+            },
             { image: 'https://via.placeholder.com/300', content: 'Risk management for investment funds and AIFs.' },
             { image: 'https://via.placeholder.com/300', content: 'Support for product development and market launch.' },
             { image: 'https://via.placeholder.com/300', content: 'Data protection strategies and cybersecurity frameworks.' },

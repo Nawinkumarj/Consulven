@@ -28,7 +28,7 @@ const JobCard = ({ job }) => {
             <Link to={`/career/${job.id}`} className='JobBtn'>
                 <button>
                     <span>Apply Now</span>
-                    <img src={assets.arrowWhite} className='icon' />
+                    <img src={assets.arrowWhite} alt="" className='icon' />
                 </button>
             </Link>
 

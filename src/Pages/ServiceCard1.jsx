@@ -10,8 +10,8 @@ const ServiceCard1 = () => {
   return (
     <div className="ServiceCard-container">
       <Header
-        title="LOREM IPSUM"
-        para="Excellence at the Intersection of Strategy and Compliance"
+        title="OUR SERVICES"
+        para="Browse our Expertise"
         image={
           "https://images.pexels.com/photos/27509020/pexels-photo-27509020/free-photo-of-b-w-pentax.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         }
@@ -20,7 +20,7 @@ const ServiceCard1 = () => {
         <div className="ServiceCard-1">
           <div className="ServiceCard-1-main">
             <img src={assets.service1} alt="" />
-            <p>lorem ipsum</p>
+            <p>Corporate Advisory</p>
           </div>
           <div className="ServiceCard-2">
             <div className="ServiceCard2-head">

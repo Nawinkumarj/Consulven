@@ -103,7 +103,7 @@ const AboutUs = () => {
                   Our mission at Consulven is to enable businesses to succeed in a dynamic market through expert advisory and strategic support. Anchored in integrity, professionalism, and client satisfaction, we offer global and Gift City clients, including key IFSC stakeholders, the essential tools to achieve excellence.
                 </p>
 
-                <img src={assets.arrow} className="arrow" />
+                <img src={assets.arrow} alt="" className="arrow" />
 
                 <div className="animaBlack"></div>
               </div>

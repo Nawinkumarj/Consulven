@@ -42,7 +42,7 @@ const HomeComponents = () => {
           filter: "blur(10px)",
           scrollTrigger: {
             trigger: el2,
-            start: "top -20%",
+            start: "top -5%",
             end: "bottom center",
             scrub: true,
           },
@@ -53,16 +53,16 @@ const HomeComponents = () => {
 
   return (
     <div className="Homepage-about-container">
-      <img className="Homepage-about-dotcircle" src={assets.dotcircle} />
-      <img className="Homepage-about-linevector" src={assets.linevec} />
-      <img className="Homepage-about-linevector2" src={assets.linevec} />
+      <img className="Homepage-about-dotcircle" src={assets.dotcircle} alt="" />
+      <img className="Homepage-about-linevector" src={assets.linevec} alt=""/>
+      <img className="Homepage-about-linevector2" src={assets.linevec} alt=""/>
 
       {/* <img className="Homepage-about-linevec" src={assets.linevec} /> */}
       <ul id="Homepage-cards">
         <li className="Homepage-card" id="Homepage-card_1" ref={sectionRef1}>
           <div className="Homepage-about-main">
-            <img className="Homepage-about-linevector3" src={assets.linevec} />
-            <img className="Homepage-about-linevector4" src={assets.linevec} />
+            <img className="Homepage-about-linevector3" src={assets.linevec} alt=""/>
+            <img className="Homepage-about-linevector4" src={assets.linevec} alt=""/>
 
             <div className="Homepage-about-img">
               {isMoving && (
@@ -79,7 +79,7 @@ const HomeComponents = () => {
                 onMouseLeave={handleMouseMove}
               />
 
-              <img className="Homepage-about-logo" src={assets.abouticon} />
+              <img className="Homepage-about-logo" src={assets.abouticon} alt=""/>
             </div>
             <div className="Homepage-about-content">
               <div className="Homepage-about-content-head">
@@ -103,24 +103,22 @@ const HomeComponents = () => {
                 </p>
 
                 <div className="Homepage-about-content-flip">
-                  <img src={assets.logo} />
+                  <img src={assets.logo} alt=""/>
                   <div>
-                    <h1>Lorem ipsum dolor sit amet</h1>
+                    <h1>Multifaceted Approach to Success</h1>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Animi nulla, accusantium tempore eius cupiditate ipsa
-                      corrupti rerum odio.
+                    We believe in a holistic approach, aligning operational, financial, and compliance frameworks to create specific
+                     solutions that deliver measurable, long-term value for our clients.
                     </p>
                   </div>
                 </div>
                 <div className="Homepage-about-content-flip">
-                  <img src={assets.logo} />
+                  <img src={assets.logo} alt=""/>
                   <div>
-                    <h1>Lorem ipsum dolor sit amet</h1>
+                    <h1>Strategic Global Presence</h1>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Animi nulla, accusantium tempore eius cupiditate ipsa
-                      corrupti rerum odio.
+                    Headquartered in GIFT City, we leverage its strategic advantages to provide businesses with seamless access 
+                    to international markets, fostering growth and expanding global footprints.
                     </p>
                   </div>
                 </div>
@@ -140,7 +138,7 @@ const HomeComponents = () => {
               </div>
             </div>
             <div className="Homepage-about-dot">
-              <img className="Homepage-about-dot" src={assets.dotvec} />
+              <img className="Homepage-about-dot" src={assets.dotvec} alt=""/>
             </div>
           </div>
         </li>
@@ -160,15 +158,14 @@ const HomeComponents = () => {
             </div>
             <div className="Homepage-choose-content" ref={sectionRef2}>
               <div className="Homepage-choose-dot">
-                <img className="Homepage-choose-dot" src={assets.dotvec} />
+                <img className="Homepage-choose-dot" src={assets.dotvec} alt=""/>
               </div>
               <div className="Homepage-choose-content-l">
                 <div className="Homepage-choose-content-left">
-                  <h2>LOREM IPSUM</h2>
-                  <h1>SIMPLE TEXT</h1>
+                  <h2>Distinctive Highlights</h2>
+                  {/* <h1>SIMPLE TEXT</h1> */}
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Similique volupta
+                  Unique strategies and innovation driving sustainable success.
                   </p>
                   <img src={assets.chooseus} alt="" />
                 </div>
@@ -176,7 +173,7 @@ const HomeComponents = () => {
               </div>
               <div className="Homepage-choose-content-r">
                 <div className="Homepage-choose-content-main">
-                  <img src={assets.abouticon} />
+                  <img src={assets.abouticon} alt=""/>
                   <div className="Homepage-choose-content-text">
                     <h1>Customer-Focused Strategies</h1>
                     <p>
@@ -187,7 +184,7 @@ const HomeComponents = () => {
                   </div>
                 </div>
                 <div className="Homepage-choose-content-main">
-                  <img src={assets.abouticon} />
+                  <img src={assets.abouticon} alt=""/>
                   <div className="Homepage-choose-content-text">
                     <h1>Holistic Integration:</h1>
                     <p>
@@ -198,7 +195,7 @@ const HomeComponents = () => {
                   </div>
                 </div>
                 <div className="Homepage-choose-content-main">
-                  <img src={assets.abouticon} />
+                  <img src={assets.abouticon} alt=""/>
                   <div className="Homepage-choose-content-text">
                     <h1>Regulatory and Industry Expertise</h1>
                     <p>
@@ -210,7 +207,7 @@ const HomeComponents = () => {
                 </div>
               </div>
               <div className="Homepage-choose-content-vector">
-                <img src={assets.chooseVector} />
+                <img src={assets.chooseVector} alt=""/>
               </div>
             </div>
             <EnquiryForm />
