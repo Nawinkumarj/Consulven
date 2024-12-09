@@ -29,13 +29,13 @@ const Navbar = () => {
               <div>
                 <img src={assets.location_icon} alt="Location Icon" />
               </div>
-              <p>GIFT SEZ, Gift City, Gandhinagar - 382355</p>
+              <a href='https://maps.app.goo.gl/Gy4iLRzcNQLNMqe7A' target='_blank'>GIFT SEZ, Gift City, Gandhinagar - 382355</a>
             </div>
             <div className="topSection">
               <div>
                 <img src={assets.mail_icon} alt="Mail Icon" />
               </div>
-              <p>info@consulven.com</p>
+              <a href='mailto:info@consulvenifsc.com'>info@consulvenifsc.com</a>
             </div>
           </div>
 
@@ -44,7 +44,7 @@ const Navbar = () => {
             <div className="backWhite"></div>
             <div className="topBlack">
               <img src={assets.phone_icon} alt="Phone Icon" />
-              <p>+91 7001098632</p>
+              <a href='tel:081488812523'>+91 81488812523</a>
             </div>
 
             {/* NavBar Links */}

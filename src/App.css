@@ -1801,26 +1801,24 @@ input:is(:-webkit-autofill, :autofill) {
   font-weight: bolder;
   color: white;
   padding-bottom: 5px;
+  margin-top: 30px;
 }
-
-.Footer-talktoUS p {
-  width: 20vw;
-  color: white;
-  font-size: 16px;
-  line-height: 30px;
-}
-
 .Footer-talktoUS-detail {
   padding-top: 2rem;
   margin-left: 90px;
+  margin-top: 10px;
 }
 
-.Footer-talktoUS-detail p {
+.Footer-talktoUS-detail a {
   padding-bottom: 20px;
   display: flex;
   align-items: center;
+  color: white;
+  transition: all .8s;
 }
-
+.Footer-talktoUS-detail a:hover{
+  color: var(--primary-color);
+}
 .Footer-talktoUs-icon {
   color: #228b22;
   padding-right: 10px;
@@ -2187,11 +2185,15 @@ input:is(:-webkit-autofill, :autofill) {
   padding-bottom: 7rem;
 }
 
-.contact-details-section p {
+.contact-details-section a {
   width: 100%;
   font-size: 24px;
+  color: white;
+  transition: all .8s;
 }
-
+.contact-details-section a:hover{
+  color: var(--primary-color);
+}
 .contact-details-icon {
 
   background-color: rgb(255, 255, 255);
@@ -4281,7 +4283,12 @@ input:-webkit-autofill:active {
   gap: 10px;
   margin-right: 15px;
 }
-
+.navbar .NavRight .top .topSection a{
+  color: white;
+}
+.navbar .NavRight .top .topSection a:hover{
+  color: var(--primary-color);
+}
 .navbar .NavRight .top .topSection div img {
   width: 30px;
   vertical-align: middle;
@@ -4325,7 +4332,13 @@ input:-webkit-autofill:active {
   clip-path: polygon(3% 0, 100% 0, 100% 100%, 0% 100%);
   border-top-left-radius: 50px;
 }
-
+.navbar .NavRight .bottom .topBlack a{
+  color: white;
+  transition: all .8s;
+}
+.navbar .NavRight .bottom .topBlack a:hover{
+  color: var(--primary-color);
+}
 .navbar .NavRight .bottom .topBlack img {
   width: 18px;
 }

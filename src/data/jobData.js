@@ -105,6 +105,27 @@ const jobData = [
     ],
     similarJobs: ["Frontend Developer", "Product Manager", "Content Writer"],
     category: "Designer"
+  },
+  {
+    id: 6,
+    title: "Local Director - Governance & Admnistration",
+    workType: "FULL-TIME",
+    experience: "1-3 YEARS",
+    qualifications: "Bachelor's",
+    latest: "Oct 2024",
+    location: "Gift City, Gujarat",
+    shortDescription: "As the Local Director, based out of Gift City IFSC, you will serve as the liaison between Consulven IFSC and key stakeholders within Gift City and beyond.",
+    fullDescription: "As the Local Director, based out of Gift City IFSC, you will serve as the liaison between Consulven IFSC and key stakeholders within Gift City and beyond. You will play a critical role in ensuring smooth local operations, regulatory compliance, and fostering relationships with clients, regulators, and partners.",
+    requirementPara: "The ideal candidate must demonstrate strong leadership skills, with proven experience in governance, regulatory compliance, and stakeholder engagement. Excellent communication, strategic thinking, and resource management abilities are essential, along with a deep understanding of the IFSC ecosystem and global regulatory standards. The candidate should excel at fostering transparency and operational integrity.",
+    requirementPoints: [
+      "Education : Advanced degree in Business Administration, Law, Finance, or related fields; certifications in governance or compliance are a plus.",
+      "Experience: Over 10 years of senior leadership experience, with a focus on governance, regulatory compliance, and operational management.",
+      "Attributes: Excellent strategic thinking, decision-making, and communication skills for high-impact governance and stakeholder relations.",
+      "Knowledge: Strong track record of stakeholder engagement, including experience liaising with regulators and industry bodies.",
+      "Skills: Proven ability to manage budgets, resources, and cross-functional operations effectively.",
+    ],
+    similarJobs: ["Frontend Developer", "Product Manager", "Content Writer"],
+    category: "Designer"
   }
 ];
 

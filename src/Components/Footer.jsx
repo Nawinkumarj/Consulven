@@ -55,9 +55,9 @@ const Footer = () => {
                     <div className='Footer-talktoUS'>
                         <h1>Our team is ready to assist you</h1>
                         <div className='Footer-talktoUS-detail'>
-                            <p><FontAwesomeIcon icon={faPhoneVolume} className='Footer-talktoUs-icon' />+91-xxxxx-xxxxx</p>
-                            <p><FontAwesomeIcon icon={faEnvelope} className='Footer-talktoUs-icon' />info@consulven.com</p>
-                            <p><FontAwesomeIcon icon={faLocationDot} className='Footer-talktoUs-icon' />Unit No. 51, “The Platform”,<br />Ground floor, 11 T2, Block-11,<br/>GIFT SEZ, Gift City,<br/>Gandhinagar - 382355</p>
+                            <a href='tel:081488812523'><FontAwesomeIcon icon={faPhoneVolume} className='Footer-talktoUs-icon' />+91 81488812523</a>
+                            <a href='mailto:info@consulvenifsc.com'><FontAwesomeIcon icon={faEnvelope} className='Footer-talktoUs-icon' />info@consulvenifsc.com</a>
+                            <a href='https://maps.app.goo.gl/Gy4iLRzcNQLNMqe7A' target='_blank'><FontAwesomeIcon icon={faLocationDot} className='Footer-talktoUs-icon' />Unit No. 51, “The Platform”,<br />Ground floor, 11 T2, Block-11,<br/>GIFT SEZ, Gift City,<br/>Gandhinagar - 382355</a>
                         </div>
                     </div>
 

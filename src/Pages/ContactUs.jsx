@@ -57,13 +57,19 @@ const ContactUs = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
-      console.log("Form submitted successfully with data:", formData);
+      alert("Form submitted successfully");
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        message: '',
+      });
     }
   };
 
   return (
     <div className="contact-container">
-      <Header 
+      <Header
         title="Get in Touch with Us" 
         para="We are here to assist you. Whether you have a question about our services, we are just a message away." 
         image={"https://images.pexels.com/photos/27509020/pexels-photo-27509020/free-photo-of-b-w-pentax.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} 
@@ -92,7 +98,7 @@ const ContactUs = () => {
                   name="email" 
                   placeholder="EMAIL*" 
                   value={formData.email} 
-                  onChange={handleChange} 
+                  onChange={handleChange}
                 />
                 {errors.email && <p className="error-message">{errors.email}</p>}
               </div>
@@ -131,19 +137,19 @@ const ContactUs = () => {
                   <div className="contact-details-icon">
                     <img src={assets.location} alt="" />
                   </div>
-                  <p>Unit No. 51, “The Platform”<br />GIFT SEZ, Gift City</p>
+                  <a href="https://maps.app.goo.gl/Gy4iLRzcNQLNMqe7A" target="_blank">Unit No. 51, “The Platform”<br />GIFT SEZ, Gift City</a>
                 </div>
                 <div className="contact-details-section">
                   <div className="contact-details-icon">
                     <img src={assets.mail} alt="" />
                   </div>
-                  <p>consulven@gmail.com</p>
+                  <a href="mailto:info@consulvenifsc.com">info@consulvenifsc.com</a>
                 </div>
                 <div className="contact-details-section">
                   <div className="contact-details-icon">
                     <img src={assets.phone} alt="" />
                   </div>
-                  <p>+91 9610765860</p>
+                  <a href="tel:081488812523">+91 81488812523</a>
                 </div>
               </div>
             </div>
