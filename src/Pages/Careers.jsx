@@ -96,7 +96,7 @@ const Careers = () => {
       </div>
 
       <div className='carrerContentContainer'>
-        <h1>CURRENT OPENING</h1>
+        <h1>CURRENT OPENINGS</h1>
         <p>Explore the roles we’re currently hiring for and find the one that matches your skills and ambitions. Each role offers the opportunity to work on impactful projects, engage with a talented team, and grow your career in consulting and compliance.</p>
       </div>
 

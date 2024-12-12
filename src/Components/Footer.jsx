@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import "../App.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay } from '@fortawesome/free-solid-svg-icons'
@@ -11,6 +11,14 @@ import {Link} from "react-router-dom"
 
 
 const Footer = () => {
+    const [message, setMessage] = useState(""); 
+
+    const handleFormSubmit = (e) => {
+        e.preventDefault(); 
+        const form = e.target;
+        form.reset();
+        setMessage("Thank you for subscribing to our mailing list!"); 
+    };
     return (
         <div className='Footer-container'>
 
@@ -25,15 +33,17 @@ const Footer = () => {
                             <h1>Join Our Mailing List</h1>
                             <p>Stay Updated with the Latest Insights, News and Offerings from Consulven IFSC</p>
                             <div className='Footer-joinus-form'>
-                                <form>
+                                <form onSubmit={handleFormSubmit}>
                                     <div className="input-container">
                                         <input
                                             type="email"
                                             placeholder='EMAIL'
+                                            required
                                         />
                                         <button type="submit">Subscribe</button>
                                     </div>
                                 </form>
+                                {message && <h5 className="success-message">{message}</h5>} 
                             </div>
                         </div>
                         <div className='Footer-quicklinks'>

@@ -1,6 +1,5 @@
 import{ useState } from "react";
 import "../App.css";
-
 import { assets } from "../assets/assets";
 import SectionTitle from "../Components/SectionTitle";
 import Header from '../Components/Header';

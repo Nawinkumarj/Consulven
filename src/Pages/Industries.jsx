@@ -88,7 +88,7 @@ const industriesData = [
     {
         smallText: 'How We Can Help',
         mainImage: 'https://images.pexels.com/photos/3943745/pexels-photo-3943745.jpeg',
-        sectionTitle: 'ENTITES',
+        sectionTitle: 'ENTITIES',
         sectionTitle2: 'REIT\'s,FAMILY OFFICES',
         sectionContentTitle: 'General Insurance, Reinsurance',
         sectionContentPara: 'Insurance companies face increased regulatory scrutiny, evolving customer expectations, and the need for operational efficiency. Managing risk and navigating global insurance regulations is critical for long-term sustainability.',

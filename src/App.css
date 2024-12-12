@@ -18,7 +18,7 @@ p{
   font-family: "Open Sans", sans-serif;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1500px) {
   html {
     overfloW-x: hidden;
   }
@@ -34,17 +34,15 @@ p{
   box-sizing: border-box;
 }
 
-body {
+body {  
   background-color: black;
   color: white;
   /* font-family: "Montserrat"; */
   overflow-x: hidden;
 }
-
 a {
   text-decoration: none !important
 }
-
 a,
 button {
   cursor: pointer;
@@ -271,6 +269,12 @@ button {
 
 .Homepage-about-img:hover .Homepage-about-logo {
   display: none;
+}
+
+@media screen and (max-width:1000px){
+.Homepage-about-img:hover .Homepage-about-logo {
+  display: block;
+}
 }
 
 .Homepage-about-content-flip {
@@ -1107,6 +1111,14 @@ button {
     display: none;
   }
 
+  .Homepage-about-main {
+    margin:7rem auto  
+  }
+
+  .Homepage-choose-main{
+    padding-top: 0;
+  }
+
   .Homepage-choose-content {
 
     padding: 0rem 0;
@@ -1570,16 +1582,12 @@ input:is(:-webkit-autofill, :autofill) {
 
 @media screen and (max-width:800px) {
   .carousel-slide::after {
-    clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 56%, 100% 60%, 98% 62.1%, 95% 63.9%, 89.8% 65.8%, 85% 67.2%, 74% 67%, 0 50%);
     background-image: linear-gradient(to top, #228b22, rgb(0, 0, 0));
     opacity: 60%;
   }
 
   .carousel-slide img {
-    width: 100%;
-    height: 900px;
-    z-index: 2;
-    clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 56%, 100% 60%, 98% 62.1%, 95% 63.9%, 89.8% 65.8%, 85% 67.2%, 74% 67%, 0 50%);
+    height:80vh;
   }
 
   .carousel-text h3 {
@@ -1587,9 +1595,13 @@ input:is(:-webkit-autofill, :autofill) {
     padding-bottom: 1.5rem;
   }
 
+  .slide-wave{
+    bottom:-1%
+  }
+
   .carousel-text {
     position: absolute;
-    top: 30%;
+    top: 45%;
     transform: translateY(-50%);
     color: white;
     z-index: 2;
@@ -1637,6 +1649,14 @@ input:is(:-webkit-autofill, :autofill) {
 
 
 /* Footer Starts */
+
+
+.success-message {
+  margin-top: 10px;
+  color: green;
+  font-size: 14px;
+}
+
 
 .Footer-container {
   background-color: #252525;
@@ -1963,12 +1983,13 @@ input:is(:-webkit-autofill, :autofill) {
 
   .Footer-logo {
     position: absolute;
-    bottom: -15px;
-    right: 8%;
+    top: 25%;
+   left:50%;
+   transform: translateX(-50%);
   }
 
   .Footer-logo img {
-    width: 100px
+    width: 150px
   }
 
   .Footer-talktoUS-detail {
@@ -2260,7 +2281,23 @@ input:-webkit-autofill:active {
   font-weight: bold;
 }
 
+ @media (max-width:1000px){
+  .contact-content-details {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -2%;
+}
+.contact-form form{
+  width:100%;
+}
 
+.contact-form h1 {
+  width:100%
+}
+
+
+ }
 
 
 @media screen and (max-width:800px) {
@@ -2394,46 +2431,6 @@ input:-webkit-autofill:active {
 
 
 /* cursor starts */
-
-.boxes {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
-.box {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  overflow: hidden;
-  cursor: none;
-}
-
-.custom-cursor {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-
-}
-
-.box-bound {
-  width: 100px;
-  height: 50px;
-  background-position: top left;
-  background-size: contain;
-  background-repeat: no-repeat;
-  transition: width 0.1s ease-in-out, height 0.1s ease-in-out;
-
-}
-
-.box-bound.active {
-  width: 150px;
-  height: 75px;
-}
-
 
 
 
@@ -3678,7 +3675,7 @@ input:-webkit-autofill:active {
 
 @media screen and (max-width:500px) {
   .serviceCard-main {
-    width: 300px;
+    width: 330px;
     height: 500px;
     padding: 1rem 0.5rem 2rem 0.5rem;
     border-radius: 10px;
@@ -3701,7 +3698,7 @@ input:-webkit-autofill:active {
   }
 
   .serviceCard-main:hover::after {
-    right: 20px;
+    right: 40px;
   }
 
 }
@@ -3912,6 +3909,16 @@ input:-webkit-autofill:active {
     top: 5px;
     right: 5px;
     color: #228B22;
+  }
+}
+
+@media (max-width:500px){
+  .modal-head h2::before {
+    top: 0px;
+    right: -10%;
+    width: 50%;
+    height: 70%;
+    border-left: none;
   }
 }
 
@@ -5820,7 +5827,9 @@ input:-webkit-autofill:active {
   gap: 35px;
 }
 
-.jobFormField input {
+.jobFormField input, 
+.jobForm select 
+{
   border: none;
   padding: 20px 15px;
   outline: none;
@@ -5829,7 +5838,8 @@ input:-webkit-autofill:active {
   color: #fff;
 }
 
-.jobFormField input::placeholder {
+.jobFormField input::placeholder, .jobFormField select::placeholder
+ {
   font-size: 20px;
   font-weight: 600;
   color: #999999;
@@ -6828,11 +6838,17 @@ input:-webkit-autofill:active {
   }
 
   .animaText p {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .carousel {
     width: 260px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .animaText p {
+    font-size: 14px;
   }
 }
 
@@ -7262,4 +7278,9 @@ input:-webkit-autofill:active {
   .rightSide .descPara {
     padding: 10px;
   }
+}
+
+.testing {
+  display: flex;
+  flex-direction: column;
 }

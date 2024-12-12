@@ -25,7 +25,7 @@ const HomeComponents = () => {
       const el2 = sectionRef2.current;
       if (el1) {
         gsap.to(el1, {
-          scale: 0.8,
+          // scale: 0.8,
           filter: "blur(10px)",
           opacity: 0.4,
           scrollTrigger: {
@@ -33,6 +33,7 @@ const HomeComponents = () => {
             start: "top -10%",
             end: "bottom center",
             scrub: true,
+          
           },
         });
       }
@@ -177,7 +178,7 @@ const HomeComponents = () => {
                   <div className="Homepage-choose-content-text">
                     <h1>Customer-Focused Strategies</h1>
                     <p>
-                      We provide results-driven solutions thatpredict and
+                      We provide results-driven solutions that predict and
                       address risks in dynamic markets, offering personalized
                       careand accuracy throughout every phase of the process.
                     </p>
@@ -189,7 +190,7 @@ const HomeComponents = () => {
                     <h1>Holistic Integration:</h1>
                     <p>
                       By aligning operational, financial, and
-                      complianceframeworks, we create unified solutions designed
+                      compliance frameworks, we create unified solutions designed
                       to offer sustainable valueover the long term.
                     </p>
                   </div>
@@ -199,9 +200,9 @@ const HomeComponents = () => {
                   <div className="Homepage-choose-content-text">
                     <h1>Regulatory and Industry Expertise</h1>
                     <p>
-                      With innovation at the forefront, weprovide strategic
+                      With innovation at the forefront, we provide strategic
                       guidance built on deep market knowledge and
-                      regulatoryproficiency.
+                      regulatory proficiency.
                     </p>
                   </div>
                 </div>
@@ -220,7 +221,7 @@ const HomeComponents = () => {
           <h2>connecting markets, bridging continents</h2>
           <p>
             Headquartered in Gift City IFSC, we work with international
-            businesses, acknowledgingthe specific challenges and opportunities
+            businesses, acknowledging the specific challenges and opportunities
             within each regional landscape.
           </p>
           <h5>Discover our key markets.</h5>

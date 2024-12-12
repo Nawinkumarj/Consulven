@@ -22,7 +22,7 @@ const service2Data = [
     heading: "Risk Management (Compliance)",
     content: "We create frameworks to address legal and compliance risks, protecting businesses from liabilities and adapting to regulatory changes.",
     popContent:"Minimizing Legal and Compliance Risks",
-    para1:"In today’s business environment, legal and compliance risks can arise from multiplesources—ranging from regulatory changes to operational lapses. Failure to effectively manage these risks can result in fines, sanctions, or operational shutdowns.Organizations need a proactive approach to identify, assess, and mitigate these risks toensure business continuity.",
+    para1:"In today’s business environment, legal and compliance risks can arise from multiplesources—ranging from regulatory changes to operational lapses. Failure to effectively manage these risks can result in fines, sanctions, or operational shutdowns. Organizations need a proactive approach to identify, assess, and mitigate these risks toensure business continuity.",
     para2:"Our expert team at Consulven IFSC works closely with your organization to develop comprehensive risk management frameworks. We identify potential legal and compliance risks, provide strategic advice on risk mitigation, and design risk control mechanisms that align with your business objectives. Whether it’s preventing non-compliance or preparing for unforeseen regulatory changes, our goal is to secure your business from any regulatory liabilities.",
    
   },
@@ -33,8 +33,8 @@ const service2Data = [
     heading: "Compliance Audits",
     content: "We conduct compliance audits to identify gaps, improve governance, and align processes with legal standards, minimizing risks effectively.",
     popContent:"Ensuring Operational Integrity Through Audits",
-    para1:"Regular audits are a critical aspect of ensuring compliance and operational integrity.However, conducting thorough and effective audits requires specialized knowledge ofregulatory standards and industry best practices. Without these, businesses canoverlook key risks or opportunities for improvement.",
-    para2:"Consulven IFSC conducts detailed compliance audits that assess your organization’sadherence to applicable regulations and internal policies. Our audits help identify gapsin compliance, highlight areas of improvement, and ensure your processes are alignedwith legal requirements. Through our structured and transparent audit process, we helpyou minimize regulatory risks, improve governance, and maintain the highest standardsof compliance.",
+    para1:"Regular audits are a critical aspect of ensuring compliance and operational integrity.However, conducting thorough and effective audits requires specialized knowledge of regulatory standards and industry best practices. Without these, businesses can overlook key risks or opportunities for improvement.",
+    para2:"Consulven IFSC conducts detailed compliance audits that assess your organization’s adherence to applicable regulations and internal policies. Our audits help identify gaps in compliance, highlight areas of improvement, and ensure your processes are aligned with legal requirements. Through our structured and transparent audit process, we help you minimize regulatory risks, improve governance, and maintain the highest standards of compliance.",
   
   },
   {
@@ -45,7 +45,7 @@ const service2Data = [
     content: "We provide corporate secretarial services to enhance governance, manage obligations, and ensure compliance, streamlining operations across entities.",
     popContent:"Strengthening Corporate Governance and Compliance",
     para1:"Corporate governance plays a vital role in driving long-term success and building trustwith stakeholders. Ensuring that your organization adheres to corporate governancebest practices, manages its statutory obligations, and remains compliant with local andinternational regulations is essential. Poor governance can lead to legal complications,mismanagement, and reputational damage.",
-    para2:"At Consulven IFSC, we provide a full range of corporate secretarial services to supportyour governance needs. Our team assists in organizing board and committee meetings,drafting agendas, and maintaining accurate minutes. We also ensure compliance withstock exchange listing requirements, securities regulations, and manage theincorporation of new companies and subsidiaries. From maintaining statutory registersto handling shareholder communications, we ensure that your governance frameworkoperates seamlessly across multiple entities within your corporate group.",
+    para2:"At Consulven IFSC, we provide a full range of corporate secretarial services to support your governance needs. Our team assists in organizing board and committee meetings, drafting agendas, and maintaining accurate minutes. We also ensure compliance withstock exchange listing requirements, securities regulations, and manage the incorporation of new companies and subsidiaries. From maintaining statutory registers to handling shareholder communications, we ensure that your governance framework operates seamlessly across multiple entities within your corporate group.",
     
   },
   {
@@ -55,8 +55,8 @@ const service2Data = [
     heading: "Policy & Procedure Development",
     content: "We create robust policies to navigate regulatory complexities, fostering integrity, transparency, and operational efficiency.",
     popContent:"Building Frameworks for Regulatory Compliance",
-    para1:"As regulatory landscapes become more complex, having robust policies andprocedures in place is critical to maintaining compliance. Without clear frameworks,organizations risk inefficiency, regulatory breaches, and operational setbacks.",
-    para2:"Consulven IFSC develops tailored policies and procedures to help you comply withindustry regulations and internal control frameworks. We work with your leadershipteam to ensure that all compliance policies are up to date and aligned with the latestlegal standards. From whistleblower policies to internal control systems, we ensure thatyour organization operates with integrity and transparency while mitigating the risk ofcompliance failures.",
+    para1:"As regulatory landscapes become more complex, having robust policies and procedures in place is critical to maintaining compliance. Without clear frameworks, organizations risk inefficiency, regulatory breaches, and operational setbacks.",
+    para2:"Consulven IFSC develops tailored policies and procedures to help you comply with industry regulations and internal control frameworks. We work with your leadership team to ensure that all compliance policies are up to date and aligned with the latest legal standards. From whistle blower policies to internal control systems, we ensure that your organization operates with integrity and transparency while mitigating the risk ofcompliance failures.",
     
   },
   {
@@ -66,8 +66,8 @@ const service2Data = [
     heading: " Documentation & Record Keeping",
     content: "We manage records to support compliance, maintaining accurate registers and secure access while streamlining statutory obligations.",
     popContent:"Ensuring Accuracy and Compliance Through Proper Documentation",
-    para1:"Accurate and well-maintained corporate records are a key element of governance andcompliance. However, improper documentation management can lead to compliancebreaches, legal penalties, and operational inefficiencies.",
-    para2:"Our team at Consulven IFSC takes care of all your documentation and record-keepingneeds. We ensure that registers of directors, shareholders, and beneficial owners aremeticulously updated and maintained as per legal requirements. Our system for storingand retrieving important corporate documents ensures that your records remain secureand accessible, meeting all statutory obligations with ease.",
+    para1:"Accurate and well-maintained corporate records are a key element of governance and compliance. However, improper documentation management can lead to compliance breaches, legal penalties, and operational inefficiencies.",
+    para2:"Our team at Consulven IFSC takes care of all your documentation and record-keeping needs. We ensure that registers of directors, shareholders, and beneficial owners are meticulously updated and maintained as per legal requirements. Our system for storing and retrieving important corporate documents ensures that your records remain secure and accessible, meeting all statutory obligations with ease.",
     
   },
 ];

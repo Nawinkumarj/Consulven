@@ -18,6 +18,7 @@ const JobDetails = () => {
 
   const similarJobs = jobData.filter((j) => job.similarJobs.includes(j.title));
 
+  // File Upload States
   const [selectedFiles, setSelectedFiles] = useState([]);
   const [uploadProgress, setUploadProgress] = useState({});
   const [isUploading, setIsUploading] = useState({});
@@ -25,6 +26,112 @@ const JobDetails = () => {
   const [isDragging, setIsDragging] = useState(false);
   const [isPopupVisible, setIsPopupVisible] = useState(false);
 
+  // Form States
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    jobTitle: '',
+    experience: '',
+    jobType: ''
+  });
+
+  const [errors, setErrors] = useState({});
+
+  // Validation Functions
+  const validateName = (name) => {
+    if (!name) return 'Name is required';
+    if (name.length < 2) return 'Name must be at least 2 characters long';
+    if (!/^[A-Za-z\s]+$/.test(name)) return 'Name can only contain letters and spaces';
+    return '';
+  };
+
+  const validateEmail = (email) => {
+    if (!email) return 'Email is required';
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) return 'Please enter a valid email address';
+    return '';
+  };
+
+  const validatePhone = (phone) => {
+    if (!phone) return 'Phone number is required';
+    const phoneRegex = /^[0-9]{10}$/;
+    if (!phoneRegex.test(phone)) return 'Phone number must be 10 digits';
+    return '';
+  };
+
+  const validateJobTitle = (jobTitle) => {
+    if (!jobTitle) return 'Job Title is required';
+    if (jobTitle.length < 3) return 'Job Title must be at least 3 characters long';
+    return '';
+  };
+
+  const validateExperience = (experience) => {
+    if (!experience) return 'Experience is required';
+    const expNumber = parseInt(experience, 10);
+    if (isNaN(expNumber)) return 'Experience must be a number';
+    if (expNumber < 0 || expNumber > 50) return 'Experience must be between 0 and 50 years';
+    return '';
+  };
+
+  const validateJobType = (jobType) => {
+    if (!jobType) return 'Job Type is required';
+    const validJobTypes = ['Full-time', 'Part-time', 'Contract', 'Freelance', 'Remote'];
+    if (!validJobTypes.includes(jobType)) return 'Please select a valid Job Type';
+    return '';
+  };
+
+  // Handle input changes
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+
+    // Validate individual field on change
+    switch(name) {
+      case 'name':
+        setErrors(prev => ({...prev, name: validateName(value)}));
+        break;
+      case 'email':
+        setErrors(prev => ({...prev, email: validateEmail(value)}));
+        break;
+      case 'phone':
+        setErrors(prev => ({...prev, phone: validatePhone(value)}));
+        break;
+      case 'jobTitle':
+        setErrors(prev => ({...prev, jobTitle: validateJobTitle(value)}));
+        break;
+      case 'experience':
+        setErrors(prev => ({...prev, experience: validateExperience(value)}));
+        break;
+      case 'jobType':
+        setErrors(prev => ({...prev, jobType: validateJobType(value)}));
+        break;
+      default:
+        break;
+    }
+  };
+
+  // Validate entire form
+  const validateForm = () => {
+    const newErrors = {
+      name: validateName(formData.name),
+      email: validateEmail(formData.email),
+      phone: validatePhone(formData.phone),
+      jobTitle: validateJobTitle(formData.jobTitle),
+      experience: validateExperience(formData.experience),
+      jobType: validateJobType(formData.jobType)
+    };
+
+    setErrors(newErrors);
+
+    // Check if any errors exist
+    return !Object.values(newErrors).some(error => error !== '');
+  };
+
+  // File Upload Methods
   const validateFile = (file) => {
     const fileSizeMB = file.size / (1024 * 1024);
     const fileExtension = file.name.slice(file.name.lastIndexOf("."));
@@ -98,7 +205,38 @@ const JobDetails = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setIsPopupVisible(true);
+
+    // Validate form and check if files are uploaded
+    const isFormValid = validateForm();
+    const areFilesUploaded = selectedFiles.length > 0;
+
+    if (isFormValid && areFilesUploaded) {
+      setIsPopupVisible(true);
+      
+      // Prepare submission data
+      const submissionData = {
+        ...formData,
+        files: selectedFiles
+      };
+
+      // Here you would typically send data to your backend
+      console.log('Submitting:', submissionData);
+      
+      // Reset form after successful submission
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        jobTitle: '',
+        experience: '',
+        jobType: ''
+      });
+      setSelectedFiles([]);
+    } else {
+      if (!areFilesUploaded) {
+        toast.error("Please upload at least one file");
+      }
+    }
   };
 
   const closePopup = () => {
@@ -119,23 +257,23 @@ const JobDetails = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-        }
+        },
       },
       {
         breakpoint: 580,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-};
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
 
   return (
     <div>
-      <ToastContainer /> {/* Toastify container to display notifications */}
+      <ToastContainer />
       <div className="JobDetailsPageContainer">
-        {/* LeftSide */}
+        {/* Left Side (Previous Implementation) */}
         <div className="leftSide">
           <h1>JOB INFORMATION</h1>
           <div className="jobAllPosition">
@@ -166,7 +304,7 @@ const JobDetails = () => {
           </div>
         </div>
 
-        {/* RightSide */}
+        {/* Right Side (Previous Implementation) */}
         <div className="rightSide">
           {/* Title Section */}
           <h1 className='jobTitleSm'>JOB INFORMATION</h1>
@@ -214,24 +352,89 @@ const JobDetails = () => {
           </div>
         </div>
       </div>
+
+      {/* Application Form */}
       <form action="#" method="#" className="jobForm" onSubmit={handleSubmit}>
         <h1>BASIC INFORMATION</h1>
         <div className="jobFormField">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <input
-            type="tel"
-            placeholder="Your Phone Number"
-            required
-            maxLength="10"
-            pattern="[1-9]{1}[0-9]{9}"
-          />
-          <input type="text" placeholder="Job Title" required />
-          <input type="text" placeholder="Years Of Experience" required />
-          <input type="text" placeholder="Job Type" required />
+          <div className='testing'>
+            <input
+              type="text"
+              placeholder="Your Name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+            />
+            {errors.name && <span className="error">{errors.name}</span>} 
+          </div>
+
+          <div className='testing'>
+            <input
+              type="email"
+              placeholder="Your Email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+            />
+            {errors.email && <span className="error">{errors.email}</span>}
+          </div>
+
+          <div className='testing'>
+            <input
+              type="tel"
+              placeholder="Your Phone Number"
+              name="phone"
+              maxLength="10"
+              value={formData.phone}
+              onChange={handleChange}
+            />
+            {errors.phone && <span className="error">{errors.phone}</span>}
+          </div>
+
+          <div className='testing'>
+            <input
+              type="text"
+              placeholder="Job Title"
+              name="jobTitle"
+              value={formData.jobTitle}
+              onChange={handleChange}
+            />
+            {errors.jobTitle && <span className="error">{errors.jobTitle}</span>}
+          </div>
+
+          <div className='testing'>
+            <input
+              type="text"
+              placeholder="Years Of Experience"
+              name="experience"
+              value={formData.experience}
+              onChange={handleChange}
+            />
+            {errors.experience && <span className="error">{errors.experience}</span>}
+          </div>
+
+          <div className='testing'>
+          <select
+              name="jobType"
+              value={formData.jobType}
+              onChange={handleChange}
+            >
+              <option value="">Select Job Type</option>
+              <option value="Full-time">Full-time</option>
+              <option value="Part-time">Part-time</option>
+              <option value="Contract">Contract</option>
+              <option value="Freelance">Freelance</option>
+              <option value="Remote">Remote</option>
+            </select>
+            {errors.jobType && <span className="error">{errors.jobType}</span>}
+          </div>
         </div>
+
+        {/* File Upload Section */}
         <div className="fileUploadContainer">
-          <h3 className="uploadTitle">Upload your CV and tell us how you can make an impact at Consulven. </h3>
+          <h3 className="uploadTitle">
+            Upload your CV and tell us how you can make an impact at Consulven.
+          </h3>
           <div
             className={`upload-section ${isDragging ? "drag-active" : ""}`}
             onDragEnter={handleDragEnter}
@@ -255,7 +458,6 @@ const JobDetails = () => {
               multiple
               onChange={handleFileSelect}
               accept=".pdf, .doc, .docx, .jpg, .jpeg, .png"
-              required
             />
           </div>
 

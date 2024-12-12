@@ -23,7 +23,7 @@ const teamMembers = [
     {
       id: 2,
       name: "Dr. Uma Jagadeesan",
-      role: "Head of Operations & Stratergy",
+      role: "Head of Operations & Strategy",
       image: uma,
       socialMedia: {
         linkedin: "https://linkedin.com/in/ipsum"

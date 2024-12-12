@@ -126,7 +126,7 @@ const EnquiryForm = () => {
                 icon={faPhoneVolume}
                 className="enquiry-talktoUs-icon"
               />
-              Call for more Info (+91 98610*****)
+              Call for more Info (+91 81488812523)
             </p>
           </div>
         </div>
