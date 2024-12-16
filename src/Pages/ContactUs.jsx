@@ -154,10 +154,10 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-        <div className="contact-map">
+        {/* <div className="contact-map">
           <SectionTitle sectionTitle={"VISIT US"} />
           <img src={assets.map} alt="" />
-        </div>
+        </div> */}
       </div>
     </div>
   );

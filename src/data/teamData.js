@@ -9,21 +9,21 @@ const teamMembers = [
     {
       id: 1,
       name: "Dr. Sanjay Thakrar",
-      role: "Founder",
+      role: "Director",
       image: sanjay, 
       socialMedia: {
         linkedin: "https://linkedin.com/in/lorem"
       },
       size: 'small' ,
-      para1: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque minus necessitatibus perspiciatis esse exercitationem cumque quam ratione illo sed praesentium blanditiis, ad, saepe recusandae commodiconsequatur! Recusandae incidunt illo provident.",
-      para2: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque minus necessitatibus perspiciatis esse exercitationem cumque quam ratione illo sed praesentium blanditiis, ad, saepe recusandae commodiconsequatur! Recusandae incidunt illo provident.",
-      para3: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque minus necessitatibus perspiciatis esse exercitationem cumque quam ratione illo sed praesentium blanditiis, ad, saepe recusandae commodiconsequatur! Recusandae incidunt illo provident.",
+      para1: "Dr. Sanjay Thakrar is a visionary Founder and has been pivotal in developing various cutting-edge businesses globally. A highly motivated and driven all-around executive with experience in financial organizations and running his own business enterprises. He has a unique perspective of technical and business requirements, and keen not only on growth in revenue and market share but participation and contribution to strong CSR programs.",
+      para2: "He is a holder of a Professional Doctorate, a Master’ degree in Business Administration and a Bachelor of Science qualification. He has an extensive financial background, working in invoice discounting, immersed in the entire life cycle of imports and exports from inception and pro-forma invoices, through freight forwarding, insurance, importers, transporters, and shipping. Always on task with an ability to identify key marketing strategies and implement account positives, he provides direction and leadership with an emphasis on utilizing the strengths of colleagues and creating an environment of forward-thinking ideas driven by business needs, sales targets and innovative marketing solutions",
+      para3: "His founding ventures include right from Premium Brand Distributors Ltd (2010-2016) , UMS Management Services (2011- 2012), Engineered Green Technologies UK (2011 – 2012), Innovative Capital Partners Limited UK (2011-2012 ), Galaxy EU Finance Ltd, Euro Exim Bank Limited UK (2014-2015), Synergist Consulting Services – covering Pizza Village, FASTA Pizza, EEB Engineering, Hydroponics. He serves as a consultant in many organizations and the most significant is Euro Exim Bank on Global Leadership and Strategy. His key responsibilities are Strategy, Planning, Sales, Company acquisitions, Building international sales teams, and Representation at conferences. Now, as he assumes the role of Director at Consulven IFSC Pvt Ltd, his strategic leadership and industry expertise are poised to drive the company towards new heights of success. ",
     },
 
     {
       id: 2,
       name: "Dr. Uma Jagadeesan",
-      role: "Head of Operations & Strategy",
+      role: "Director",
       image: uma,
       socialMedia: {
         linkedin: "https://linkedin.com/in/ipsum"
@@ -38,7 +38,7 @@ const teamMembers = [
     {
       id: 3,
       name: "P.Udhayakumar",
-      role: "Senior Advisor - New Ventures",
+      role: "Director",
       image: udhay,
       socialMedia: {
         linkedin: "https://linkedin.com/in/johndoe"
@@ -53,15 +53,15 @@ const teamMembers = [
     {
       id: 4,
       name: "Paresh Pujani",
-      role: "Simple Text",
+      role: "Director",
       image: image,
       socialMedia: {
         linkedin: "https://linkedin.com/in/janesmith"
       },
       size: 'small',
-      para1: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque minus necessitatibus perspiciatis esse exercitationem cumque quam ratione illo sed praesentium blanditiis, ad, saepe recusandae commodiconsequatur! Recusandae incidunt illo provident.",
-      para2: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque minus necessitatibus perspiciatis esse exercitationem cumque quam ratione illo sed praesentium blanditiis, ad, saepe recusandae commodiconsequatur! Recusandae incidunt illo provident.",
-      para3: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque minus necessitatibus perspiciatis esse exercitationem cumque quam ratione illo sed praesentium blanditiis, ad, saepe recusandae commodiconsequatur! Recusandae incidunt illo provident.",
+      para1: "Paresh Punjani, a distinguished figure in the realm of French language education, brings an illustrious career spanning over three decades to Consulven IFSC Pvt Ltd. With a solid foundation built during his time at Alliance Française d'Ahmedabad, Paresh has not only honed his teaching skills but has also held pivotal roles such as Course Coordinator, shaping the curriculum and overseeing examinations. His expertise extends beyond teaching to include administrative responsibilities, training, and coordination with various stakeholders, including educational institutions and the Embassy of France.",
+      para2: "Paresh's commitment to excellence is reflected in his extensive list of certifications, including Diplome de Langue from AF Paris and DALF C2 from CIEP France. Beyond his linguistic prowess, Paresh's curiosity extends to the realms of finance, evidenced by his recent stock market training.",
+      para3: "With a passion for continuous learning and a wealth of experience in education and coordination, Paresh is poised to make a significant impact on Consulven IFSC Pvt Ltd, guiding the company towards new horizons of success and innovation.",
     }
   ];
   

@@ -207,6 +207,7 @@ button {
   /* width: 80%; */
   justify-content: center;
   margin: 0rem auto;
+  margin-bottom: 2rem;
   gap: 2rem;
   padding: 0rem 3rem;
   position: relative;
@@ -502,7 +503,7 @@ button {
   gap: 2rem;
   justify-content: space-around;
   background: #000;
-  padding-top: 5rem;
+  padding-top: 3rem;
   padding-bottom: 2rem;
 }
 
