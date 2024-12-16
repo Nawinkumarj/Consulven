@@ -95,12 +95,7 @@ const HomeComponents = () => {
               <div className="Homepage-about-content-main">
                 <h1>who are we</h1>
                 <p>
-                  We at Consulven IFSC specialize in creating adaptive solutions
-                  that respond to your business’s specific challenges. Offering
-                  a full spectrum of consulting, compliance, and secretarial
-                  services, we drive growth and foster transformation. Merging
-                  global knowledge with local insights, we empower businesses to
-                  reach today’s goals and prepare for tomorrow’s successes.
+                At Consulven IFSC, we specialize in creating adaptive solutions that address your business’s specific challenges. As a trusted business consultant, we offer a full spectrum of management consulting, corporate advisory, and compliance services to drive growth and foster transformation. Combining global knowledge with local insights, we empower businesses to enhance their business management strategies, meet today’s goals, and prepare for tomorrow’s successes.
                 </p>
 
                 <div className="Homepage-about-content-flip">
@@ -178,9 +173,7 @@ const HomeComponents = () => {
                   <div className="Homepage-choose-content-text">
                     <h1>Customer-Focused Strategies</h1>
                     <p>
-                      We provide results-driven solutions that predict and
-                      address risks in dynamic markets, offering personalized
-                      careand accuracy throughout every phase of the process.
+                    We provide results-driven business management solutions that predict and address risks in dynamic markets, offering personalized care and accuracy throughout every phase of the process.
                     </p>
                   </div>
                 </div>
@@ -189,9 +182,7 @@ const HomeComponents = () => {
                   <div className="Homepage-choose-content-text">
                     <h1>Holistic Integration:</h1>
                     <p>
-                      By aligning operational, financial, and
-                      compliance frameworks, we create unified solutions designed
-                      to offer sustainable valueover the long term.
+                    By aligning operational, financial, and compliance frameworks, we deliver management consulting and corporate advisory services that create unified solutions and offer sustainable value over the long term. 
                     </p>
                   </div>
                 </div>
@@ -200,9 +191,7 @@ const HomeComponents = () => {
                   <div className="Homepage-choose-content-text">
                     <h1>Regulatory and Industry Expertise</h1>
                     <p>
-                      With innovation at the forefront, we provide strategic
-                      guidance built on deep market knowledge and
-                      regulatory proficiency.
+                    With innovation at the forefront, we provide strategic guidance as a trusted business consultant, leveraging deep market knowledge and regulatory proficiency to meet evolving challenges.
                     </p>
                   </div>
                 </div>
@@ -220,9 +209,7 @@ const HomeComponents = () => {
           <h1>global expertise</h1>
           <h2>connecting markets, bridging continents</h2>
           <p>
-            Headquartered in Gift City IFSC, we work with international
-            businesses, acknowledging the specific challenges and opportunities
-            within each regional landscape.
+          Headquartered in Gift City IFSC, we work with international businesses, acknowledging the specific challenges and opportunities within each regional landscape.
           </p>
           <h5>Discover our key markets.</h5>
         </div>

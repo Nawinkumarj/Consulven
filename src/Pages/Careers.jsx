@@ -52,7 +52,7 @@ const Careers = () => {
           <h1>JOIN OUR TEAM</h1>
           <p>Our success is built on the collective expertise of our people. We nurture an environment where creativity thrives, leadership is cultivated, and collaboration is key. Whether you’re a seasoned professional or just starting your career, you’ll find opportunities to challenge yourself, grow your skills, and make a difference.</p>
           <a href='#jobSearch'> 
-            <button>Opening position <img src={assets.arrow_icon} alt="" /> </button>
+            <button>Open position <img src={assets.arrow_icon} alt="" /> </button>
           </a>
         </div>
         

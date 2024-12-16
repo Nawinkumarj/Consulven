@@ -46,6 +46,21 @@ import map from "../assets/mapgif.gif"
 import mail from "../assets/mailImg.svg"
 import phone from "../assets/phoneImg.svg"
 import location from "../assets/locImg.svg"
+// service1 pop images
+import serImg1 from "../assets/Service/StrategicPlanning.png"
+import serImg2 from "../assets/Service/Riskmanagement.png"
+import serImg3 from "../assets/Service/opretionalEfficieny.png"
+import serImg4 from "../assets/Service/DigitalTransformation.png"
+import serImg5 from "../assets/Service/ChangeManagement.png"
+import serImg6 from "../assets/Service/Innovation.png"
+//  service2 pop images
+import serImg7 from "../assets/Service/Compliance&regulatory.png"
+import serImg8 from "../assets/Service/RiskCompliance.png"
+import serImg9 from "../assets/Service/ComplianceAudit.png"
+import serImg10 from "../assets/Service/Corporate.png"
+import serImg11 from "../assets/Service/policy&procedure.png"
+import serImg12 from "../assets/Service/documentation.png"
+
 
 export const assets = {
     logo,
@@ -95,4 +110,17 @@ export const assets = {
     mail,
     phone,
     location,
+    serImg1,
+    serImg2,
+    serImg3,
+    serImg4,
+    serImg5,
+    serImg6,
+    serImg7,
+    serImg8,
+    serImg9,
+    serImg10,
+    serImg11,
+    serImg12,
+
 }

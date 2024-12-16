@@ -47,6 +47,7 @@ const ServiceCard1 = () => {
               icon={service.icon}
               heading={service.heading}
               content={service.content}
+              popImg={service.popImg}
               popContent={service.popContent}
               para1={service.para1}
               para2={service.para2}

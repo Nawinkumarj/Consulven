@@ -70,11 +70,11 @@ const AboutUs = () => {
             {/* RightSide */}
             <div className="rightSide">
               <p>
-                Consulven IFSC Pvt Ltd is a pioneering advisory and compliance firm based in the heart of Gujarat’s Gift City IFSC. With our bespoke suite of management consulting, compliance, and secretarial solutions, we specialize in helping organizations across a broad range of sectors enhance their strategic positioning, streamline operations, and navigate complex regulatory environments.
+              Consulven IFSC Pvt Ltd is a pioneering advisory and compliance firm based in the heart of Gujarat’s Gift City IFSC. With our bespoke suite of management consulting, compliance, and secretarial solutions, we specialize in helping organizations across a broad range of sectors enhance their strategic positioning, streamline operations, and navigate complex regulatory environments. 
               </p>
 
               <p>
-                Our team of experts’ deep industry expertise, coupled with our strong network in markets across Asia, the Middle East, and Africa, enable us to provide tailored solutions that deliver measurable impact. Whether supporting business transformations, ensuring regulatory compliance, or guiding strategic investments, Consulven is committed to unlocking value and driving sustainable growth for our clients.
+              Our team of experts’ deep industry expertise, coupled with our strong network in markets across Asia, the Middle East, and Africa, enables us to provide specified governance risk and compliance strategies that deliver measurable impact. Whether supporting business transformations, implementing a change management plan, ensuring regulatory compliance, or guiding strategic investments, Consulven also assists clients in optimizing their product development life cycle. As a trusted business partner with a focus on corporate advisory and business management, we are committed to unlocking value and driving sustainable growth for our clients. 
               </p>
             </div>
           </div>
@@ -87,7 +87,7 @@ const AboutUs = () => {
             <div className="vision">
               <h1>Vision</h1>
               <p>
-                To position ourselves as the partner of choice for organizations seeking mastery in governance, compliance, and strategy amidst the complexities of evolving global markets.
+              To position ourselves as the partner of choice for organizations seeking mastery in governance, compliance, and strategy amidst the complexities of evolving global markets. 
               </p>
 
               <div className="visionImg">
@@ -100,7 +100,7 @@ const AboutUs = () => {
               <div className="mission">
                 <h1>Mission</h1>
                 <p>
-                  Our mission at Consulven is to enable businesses to succeed in a dynamic market through expert advisory and strategic support. Anchored in integrity, professionalism, and client satisfaction, we offer global and Gift City clients, including key IFSC stakeholders, the essential tools to achieve excellence.
+                Our mission at Consulven is to enable businesses to succeed in a dynamic market through expert advisory and strategic support. Anchored in integrity, professionalism, and client satisfaction, we offer global and Gift City clients, including key IFSC stakeholders, the essential tools to achieve excellence. 
                 </p>
 
                 <img src={assets.arrow} alt="" className="arrow" />
@@ -119,7 +119,7 @@ const AboutUs = () => {
               <div className="bg">
                 <img src={assets.sample} alt="" />
                 <h2>INTEGRITY</h2>
-                <p>Adhering to uncompromising standards of honesty, ethical conduct, and responsibility in all our interactions and commitments.</p>
+                <p>Adhering to uncompromising standards of honesty, ethical conduct, and responsibility in all our interactions and commitments. </p>
               </div>
               <div className="blob"></div>
             </div>

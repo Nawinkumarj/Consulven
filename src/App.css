@@ -3838,6 +3838,7 @@ input:-webkit-autofill:active {
   top: 15px;
   right: 15px;
   color: #228B22;
+  cursor:pointer;
 }
 
 
@@ -6130,7 +6131,11 @@ input:-webkit-autofill:active {
   ;
   border-radius: 5px;
 }
-
+.error{
+  text-align: left;
+  margin: 10px;
+  color: rgba(255, 0, 0, 0.797);
+}
 /* Scroll To Top */
 
 .progress {

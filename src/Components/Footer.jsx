@@ -74,19 +74,19 @@ const Footer = () => {
                 </div>
                 <div className='Footer-mediaLinks'>
                     <div className="Footer-mediaLinks-details">
-                    <a href="https://facebook.com/lorem" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com/consulvenifsc/" target="_blank" rel="noopener noreferrer">
                     <FaFacebookF className='Footer-mediaLinks-icons' color='white' />
                     <p>consulven@facebook.com</p>
                     </a>
                     </div>
                     <div className="Footer-mediaLinks-details">
-                    <a href="https://instagram.com/lorem" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/consulven_ifsc/" target="_blank" rel="noopener noreferrer">
                     <FaInstagram className='Footer-mediaLinks-icons' color='white' />
                     <p>consulven_ifsc</p>
                     </a>
                     </div>
                     <div className="Footer-mediaLinks-details">
-                    <a href="https://linkedin.com/in/lorem" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/company/consulven-ifsc/" target="_blank" rel="noopener noreferrer">
                     <FaLinkedinIn className='Footer-mediaLinks-icons' color='white' />
                     <p>consulven_ifsc</p>
                     </a>
