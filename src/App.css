@@ -6546,7 +6546,10 @@ input:-webkit-autofill:active {
 
 @media (max-width: 1366px) and (max-height: 768px) {
   .section {
-    height: 170vh;
+    height: 130vh;
+  }
+  .aboutUs .rightSide p {
+    font-size: 16px;
   }
 }
 

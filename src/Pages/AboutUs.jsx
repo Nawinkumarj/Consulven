@@ -22,7 +22,7 @@ const AboutUs = () => {
             filter: "blur(10px)",
             scrollTrigger: {
               trigger: el,
-              start: "top -15%",
+              start: "top -15vh",
               end: "bottom center",
               scrub: 1, // Use scrub for smooth animation
               ease: "power2.out", // Smooth easing function
