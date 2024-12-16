@@ -30,7 +30,7 @@ const HomeComponents = () => {
           opacity: 0.4,
           scrollTrigger: {
             trigger: el1,
-            start: "top -15%",
+            start: "top -15vh",
             end: "bottom center",
             scrub: true,
           

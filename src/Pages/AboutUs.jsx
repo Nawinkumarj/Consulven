@@ -22,11 +22,12 @@ const AboutUs = () => {
             filter: "blur(10px)",
             scrollTrigger: {
               trigger: el,
-              start: "top -10%",
+              start: "top -15%",
               end: "bottom center",
               scrub: 1, // Use scrub for smooth animation
               ease: "power2.out", // Smooth easing function
               markers: false, // Optional: remove scroll markers
+           
             },
             duration: 2, // Smooth transition duration
           });
