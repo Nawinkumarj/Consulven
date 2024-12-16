@@ -6554,6 +6554,9 @@ input:-webkit-autofill:active {
   .aboutUs {
   width: 95%;
 }
+.aboutUs .leftSide .leftSideGrid div:nth-child(1)::before {
+  left: -30px;
+}
 }
 
 @media (max-width: 360px) {

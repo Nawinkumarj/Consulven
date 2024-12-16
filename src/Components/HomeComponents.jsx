@@ -24,13 +24,14 @@ const HomeComponents = () => {
       const el1 = sectionRef1.current;
       const el2 = sectionRef2.current;
       if (el1) {
+        const startValue = window.innerWidth === 1366 ? "top -20%" : "top -15vh";
         gsap.to(el1, {
           // scale: 0.8,
           filter: "blur(10px)",
           opacity: 0.4,
           scrollTrigger: {
             trigger: el1,
-            start: "top -15vh",
+            start: startValue,
             end: "bottom center",
             scrub: true,
           
