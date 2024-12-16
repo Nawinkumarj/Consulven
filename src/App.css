@@ -6544,6 +6544,12 @@ input:-webkit-autofill:active {
   }
 }
 
+@media (max-width: 1366px) and (max-height: 768px) {
+  .section {
+    height: 120vh;
+  }
+}
+
 @media (max-width: 360px) {
   .bgGradient .vision .mission {
     padding: 10px;
